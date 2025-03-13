@@ -1,0 +1,80 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/bhavesh/SignSpeak/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f03e6 && [1/2] Building C object CMakeFiles/cmTC_f03e6.dir/src.c.obj
+[2/2] Linking C executable cmTC_f03e6
+FAILED: cmTC_f03e6 
+: && /home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_f03e6.dir/src.c.obj -o cmTC_f03e6   && :
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj:(.literal+0x4): undefined reference to `pthread_atfork'
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_f03e6.dir/src.c.obj: in function `main':
+src.c:(.text+0x3f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bhavesh/SignSpeak/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_eb55a && [1/2] Building C object CMakeFiles/cmTC_eb55a.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_eb55a
+FAILED: cmTC_eb55a 
+: && /home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_eb55a.dir/CheckFunctionExists.c.obj -o cmTC_eb55a  -lpthreads && :
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthreads: No such file or directory
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_eb55a.dir/CheckFunctionExists.c.obj:(.literal+0x0): warning: pthread_create is not implemented and will always fail
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: /home/bhavesh/SignSpeak/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9f4af && [1/2] Building C object CMakeFiles/cmTC_9f4af.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_9f4af
+FAILED: cmTC_9f4af 
+: && /home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_9f4af.dir/CheckFunctionExists.c.obj -o cmTC_9f4af  -lpthread && :
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: cannot find -lpthread: No such file or directory
+/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld: CMakeFiles/cmTC_9f4af.dir/CheckFunctionExists.c.obj:(.literal+0x0): warning: pthread_create is not implemented and will always fail
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if compiler accepts -pthread failed with the following output:
+Change Dir: /home/bhavesh/SignSpeak/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_29f78 && [1/2] Building C object CMakeFiles/cmTC_29f78.dir/CheckForPthreads.c.obj
+[2/2] Linking C executable cmTC_29f78
+FAILED: cmTC_29f78 
+: && /home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -mlongcalls -Wno-frame-address  CMakeFiles/cmTC_29f78.dir/CheckForPthreads.c.obj -o cmTC_29f78  -pthread && :
+xtensa-esp32-elf-gcc: error: unrecognized command-line option '-pthread'
+ninja: build stopped: subcommand failed.
+
+
+

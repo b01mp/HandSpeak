@@ -1,0 +1,10 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "idf.espIdfPath": "/home/bhavesh/esp/esp-idf",
+    "idf.pythonBinPath": "/usr/bin/python3",
+    "idf.toolsPath": "/home/bhavesh/.espressif",
+    "idf.customExtraPaths": "/home/bhavesh/.espressif/tools/xtensa-esp32-elf/bin",
+    "idf.customExtraVars": {
+        "IDF_CCACHE_ENABLE": "1"
+    }
+}
