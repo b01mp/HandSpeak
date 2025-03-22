@@ -1,17 +1,17 @@
 {
-    "version":            "1.1",
+    "version":            "1.2",
     "project_name":       "bootloader",
-    "project_version":    "v5.1.5-572-g8034b50d33",
+    "project_version":    "v5.2.5",
     "project_path":       "/home/bhavesh/esp/esp-idf/components/bootloader/subproject",
     "idf_path":           "/home/bhavesh/esp/esp-idf",
-    "build_dir":          "/home/bhavesh/SignSpeak/build/bootloader",
-    "config_file":        "/home/bhavesh/SignSpeak/sdkconfig",
+    "build_dir":          "/home/bhavesh/Talk-To-My-Hand/build/bootloader",
+    "config_file":        "/home/bhavesh/Talk-To-My-Hand/sdkconfig",
     "config_defaults":    "",
     "bootloader_elf":     "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.1.5-572-g8034b50d33",
+    "git_revision":       "v5.2.5",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",
@@ -19,14 +19,14 @@
     "phy_data_partition": "",
     "monitor_baud" :      "115200",
     "monitor_toolprefix": "xtensa-esp32-elf-",
-    "c_compiler":         "/home/bhavesh/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc",
+    "c_compiler":         "/home/bhavesh/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
         "COMPONENT_KCONFIGS" : "/home/bhavesh/esp/esp-idf/components/efuse/Kconfig;/home/bhavesh/esp/esp-idf/components/esp_common/Kconfig;/home/bhavesh/esp/esp-idf/components/esp_hw_support/Kconfig;/home/bhavesh/esp/esp-idf/components/esp_system/Kconfig;/home/bhavesh/esp/esp-idf/components/freertos/Kconfig;/home/bhavesh/esp/esp-idf/components/hal/Kconfig;/home/bhavesh/esp/esp-idf/components/log/Kconfig;/home/bhavesh/esp/esp-idf/components/newlib/Kconfig;/home/bhavesh/esp/esp-idf/components/soc/Kconfig;/home/bhavesh/esp/esp-idf/components/spi_flash/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/bhavesh/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/bhavesh/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/bhavesh/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/bhavesh/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/bhavesh/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "log", "esp_rom", "esp_common", "esp_hw_support", "newlib", "xtensa" ],
-    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/bhavesh/esp/esp-idf/components/bootloader", "/home/bhavesh/esp/esp-idf/components/bootloader_support", "/home/bhavesh/esp/esp-idf/components/efuse", "/home/bhavesh/esp/esp-idf/components/esp_app_format", "/home/bhavesh/esp/esp-idf/components/esp_common", "/home/bhavesh/esp/esp-idf/components/esp_hw_support", "/home/bhavesh/esp/esp-idf/components/esp_rom", "/home/bhavesh/esp/esp-idf/components/esp_system", "/home/bhavesh/esp/esp-idf/components/esptool_py", "/home/bhavesh/esp/esp-idf/components/freertos", "/home/bhavesh/esp/esp-idf/components/hal", "/home/bhavesh/esp/esp-idf/components/log", "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/main", "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/bhavesh/esp/esp-idf/components/newlib", "/home/bhavesh/esp/esp-idf/components/partition_table", "/home/bhavesh/esp/esp-idf/components/soc", "/home/bhavesh/esp/esp-idf/components/spi_flash", "/home/bhavesh/esp/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/bhavesh/esp/esp-idf/components/bootloader", "/home/bhavesh/esp/esp-idf/components/bootloader_support", "/home/bhavesh/esp/esp-idf/components/efuse", "/home/bhavesh/esp/esp-idf/components/esp_app_format", "/home/bhavesh/esp/esp-idf/components/esp_bootloader_format", "/home/bhavesh/esp/esp-idf/components/esp_common", "/home/bhavesh/esp/esp-idf/components/esp_hw_support", "/home/bhavesh/esp/esp-idf/components/esp_rom", "/home/bhavesh/esp/esp-idf/components/esp_system", "/home/bhavesh/esp/esp-idf/components/esptool_py", "/home/bhavesh/esp/esp-idf/components/freertos", "/home/bhavesh/esp/esp-idf/components/hal", "/home/bhavesh/esp/esp-idf/components/log", "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/main", "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/bhavesh/esp/esp-idf/components/newlib", "/home/bhavesh/esp/esp-idf/components/partition_table", "/home/bhavesh/esp/esp-idf/components/soc", "/home/bhavesh/esp/esp-idf/components/spi_flash", "/home/bhavesh/esp/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "bootloader": {
             "alias": "idf::bootloader",
@@ -51,11 +51,11 @@
             "type": "LIBRARY",
             "lib": "__idf_bootloader_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_app_format", "hal" ],
+            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_bootloader_format", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
-            "sources": [ "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_init.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_clock_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_console.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_console_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_sha.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_soc.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_panic.c" ],
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/bootloader_support/libbootloader_support.a",
+            "sources": [ "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_init.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_clock_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_console.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_console_loader.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_sha.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_soc.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/esp32/bootloader_esp32.c", "/home/bhavesh/esp/esp-idf/components/bootloader_support/src/bootloader_panic.c" ],
             "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
         },
         "efuse": {
@@ -69,7 +69,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/efuse/libefuse.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/home/bhavesh/esp/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/home/bhavesh/esp/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/home/bhavesh/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/bhavesh/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/bhavesh/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/bhavesh/esp/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -78,14 +78,29 @@
             "target": "___idf_esp_app_format",
             "prefix": "idf",
             "dir": "/home/bhavesh/esp/esp-idf/components/esp_app_format",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_app_format",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/esp_app_format/libesp_app_format.a",
-            "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_app_format/esp_app_desc.c" ],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "include" ]
+        },
+        "esp_bootloader_format": {
+            "alias": "idf::esp_bootloader_format",
+            "target": "___idf_esp_bootloader_format",
+            "prefix": "idf",
+            "dir": "/home/bhavesh/esp/esp-idf/components/esp_bootloader_format",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_bootloader_format",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -99,7 +114,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/esp_common/libesp_common.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -114,7 +129,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_hw_support/cpu.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/cpu_region_protect.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk_init.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_init.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_sleep.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c", "/home/bhavesh/esp/esp-idf/components/esp_hw_support/port/esp32/chip_info.c" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32" ]
         },
@@ -129,7 +144,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/home/bhavesh/esp/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" ],
             "include_dirs": [ "include", "include/esp32", "esp32" ]
         },
@@ -144,7 +159,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/esp_system/libesp_system.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_system/libesp_system.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/esp_system/esp_err.c" ],
             "include_dirs": []
         },
@@ -189,9 +204,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/hal/libhal.a",
-            "sources": [ "/home/bhavesh/esp/esp-idf/components/hal/mpu_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/efuse_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/esp32/efuse_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/wdt_hal_iram.c", "/home/bhavesh/esp/esp-idf/components/hal/mmu_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/esp32/cache_hal_esp32.c" ],
-            "include_dirs": [ "esp32/include", "include", "platform_port/include" ]
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/hal/libhal.a",
+            "sources": [ "/home/bhavesh/esp/esp-idf/components/hal/hal_utils.c", "/home/bhavesh/esp/esp-idf/components/hal/mpu_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/efuse_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/esp32/efuse_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/wdt_hal_iram.c", "/home/bhavesh/esp/esp-idf/components/hal/mmu_hal.c", "/home/bhavesh/esp/esp-idf/components/hal/esp32/cache_hal_esp32.c" ],
+            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
         "log": {
             "alias": "idf::log",
@@ -204,7 +219,7 @@
             "priv_reqs": [ "soc", "hal", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/log/liblog.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/log/liblog.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/log/log.c", "/home/bhavesh/esp/esp-idf/components/log/log_buffers.c", "/home/bhavesh/esp/esp-idf/components/log/log_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -219,7 +234,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/main/libmain.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/main/libmain.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c" ],
             "include_dirs": []
         },
@@ -234,7 +249,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/micro-ecc/libmicro-ecc.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/uECC_verify_antifault.c" ],
             "include_dirs": [ ".", "micro-ecc" ]
         },
@@ -279,8 +294,8 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/soc/libsoc.a",
-            "sources": [ "/home/bhavesh/esp/esp-idf/components/soc/lldesc.c", "/home/bhavesh/esp/esp-idf/components/soc/dport_access_common.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/interrupts.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/gpio_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/uart_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/dport_access.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/adc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/spi_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/ledc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/pcnt_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/rmt_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdm_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/i2s_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/i2c_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/timer_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/lcd_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/mcpwm_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdmmc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/touch_sensor_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/twai_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/dac_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/rtc_io_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdio_slave_periph.c" ],
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/soc/libsoc.a",
+            "sources": [ "/home/bhavesh/esp/esp-idf/components/soc/lldesc.c", "/home/bhavesh/esp/esp-idf/components/soc/dport_access_common.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/interrupts.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/gpio_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/uart_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/dport_access.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/adc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/spi_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/ledc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/pcnt_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/rmt_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdm_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/i2s_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/i2c_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/timer_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/lcd_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/mcpwm_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/mpi_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdmmc_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/touch_sensor_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/twai_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/dac_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/rtc_io_periph.c", "/home/bhavesh/esp/esp-idf/components/soc/esp32/sdio_slave_periph.c" ],
             "include_dirs": [ "include", "esp32", "esp32/include" ]
         },
         "spi_flash": {
@@ -294,7 +309,7 @@
             "priv_reqs": [ "bootloader_support", "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/spi_flash/spi_flash_wrap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -309,9 +324,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/bhavesh/SignSpeak/build/bootloader/esp-idf/xtensa/libxtensa.a",
+            "file": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/xtensa/libxtensa.a",
             "sources": [ "/home/bhavesh/esp/esp-idf/components/xtensa/eri.c", "/home/bhavesh/esp/esp-idf/components/xtensa/xt_trax.c" ],
-            "include_dirs": [ "include", "esp32/include" ]
+            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
     },
     "all_component_info" : {
@@ -333,7 +348,7 @@
             "prefix": "idf",
             "dir": "/home/bhavesh/esp/esp-idf/components/app_update",
             "lib": "__idf_app_update",
-            "reqs": [ "partition_table", "bootloader_support", "esp_app_format", "esp_partition" ],
+            "reqs": [ "partition_table", "bootloader_support", "esp_app_format", "esp_bootloader_format", "esp_partition" ],
             "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
@@ -358,7 +373,7 @@
             "dir": "/home/bhavesh/esp/esp-idf/components/bootloader_support",
             "lib": "__idf_bootloader_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_app_format", "hal" ],
+            "priv_reqs": [ "micro-ecc", "spi_flash", "efuse", "esp_bootloader_format", "esp_app_format", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include", "bootloader_flash/include", "private_include" ]
@@ -397,7 +412,7 @@
             "priv_reqs": [ "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "." ]
+            "include_dirs": [ "/home/bhavesh/Talk-To-My-Hand/build/bootloader" ]
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -442,10 +457,10 @@
             "dir": "/home/bhavesh/esp/esp-idf/components/esp-tls",
             "lib": "__idf_esp-tls",
             "reqs": [ "mbedtls" ],
-            "priv_reqs": [ "http_parser", "lwip", "esp_timer" ],
+            "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ ".", "esp-tls-crypto" ]
+            "include_dirs": [ "/home/bhavesh/Talk-To-My-Hand/build/bootloader", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -465,6 +480,18 @@
             "prefix": "idf",
             "dir": "/home/bhavesh/esp/esp-idf/components/esp_app_format",
             "lib": "__idf_esp_app_format",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "esp_bootloader_format": {
+            "alias": "idf::esp_bootloader_format",
+            "target": "___idf_esp_bootloader_format",
+            "prefix": "idf",
+            "dir": "/home/bhavesh/esp/esp-idf/components/esp_bootloader_format",
+            "lib": "__idf_esp_bootloader_format",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
@@ -609,8 +636,8 @@
             "prefix": "idf",
             "dir": "/home/bhavesh/esp/esp-idf/components/esp_lcd",
             "lib": "__idf_esp_lcd",
-            "reqs": [],
-            "priv_reqs": [ "driver", "esp_mm", "esp_psram" ],
+            "reqs": [ "driver" ],
+            "priv_reqs": [ "esp_mm", "esp_psram" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include", "interface" ]
@@ -805,7 +832,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "diskio", "vfs", "src" ]
+            "include_dirs": [ "diskio", "src", "vfs" ]
         },
         "freertos": {
             "alias": "idf::freertos",
@@ -829,7 +856,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "esp32/include", "include", "platform_port/include" ]
+            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
         "heap": {
             "alias": "idf::heap",
@@ -925,7 +952,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch" ]
+            "include_dirs": []
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -969,8 +996,20 @@
             "prefix": "idf",
             "dir": "/home/bhavesh/esp/esp-idf/components/nvs_flash",
             "lib": "__idf_nvs_flash",
-            "reqs": [ "esp_partition", "spi_flash" ],
-            "priv_reqs": [ "newlib" ],
+            "reqs": [ "esp_partition" ],
+            "priv_reqs": [ "spi_flash", "newlib" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include", "../spi_flash/include" ]
+        },
+        "nvs_sec_provider": {
+            "alias": "idf::nvs_sec_provider",
+            "target": "___idf_nvs_sec_provider",
+            "prefix": "idf",
+            "dir": "/home/bhavesh/esp/esp-idf/components/nvs_sec_provider",
+            "lib": "__idf_nvs_sec_provider",
+            "reqs": [],
+            "priv_reqs": [ "bootloader_support", "efuse", "esp_partition", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -1225,7 +1264,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "esp32/include" ]
+            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         },
         "main": {
             "alias": "idf::main",
@@ -1252,5 +1291,12 @@
             "include_dirs": [ ".", "micro-ecc" ]
         }
     },
-    "debug_prefix_map_gdbinit": ""
+    "debug_prefix_map_gdbinit": "",
+    "gdbinit_files": {
+        "01_symbols": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/symbols",
+        "02_prefix_map": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/prefix_map",
+        "03_py_extensions": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/py_extensions",
+        "04_connect": "/home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/connect"
+    },
+    "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg"
 }

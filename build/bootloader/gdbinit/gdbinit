@@ -1,0 +1,2 @@
+source /home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/symbols
+source /home/bhavesh/Talk-To-My-Hand/build/bootloader/gdbinit/connect

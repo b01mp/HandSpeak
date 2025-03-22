@@ -1,0 +1,214 @@
+) map[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 14:03:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09bfch ( 39932) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019c24 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00019c30 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=0001be64 vaddr=40080000 size=041b4h ( 16820) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1495ch ( 84316) map[0m
+[0;32mI (169) esp_image: segment 5: paddr=00034984 vaddr=400841b4 size=084b4h ( 33972) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     SignSpeak[0m
+[0;32mI (218) cpu_start: App version:      bddc9fa-dirty[0m
+[0;32mI (223) cpu_start: Compile time:     Mar 22 2025 14:02:54[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  510146fa6614b79d...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008C668 len 00013998 (78 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+[0;32mI (325) FLEX_SENSOR: Flex Sensor ADC Value: 1354[0m
+[0;32mI (825) FLEX_SENSOR: Flex Sensor ADC Value: 1323[0m
+[0;32mI (1325) FLEX_SENSOR: Flex Sensor ADC Value: 1323[0m
+[0;32mI (1825) FLEX_SENSOR: Flex Sensor ADC Value: 1321[0m
+[0;32mI (2325) FLEX_SENSOR: Flex Sensor ADC Value: 1326[0m
+[0;32mI (2825) FLEX_SENSOR: Flex Sensor ADC Value: 1316[0m
+[0;32mI (3325) FLEX_SENSOR: Flex Sensor ADC Value: 1317[0m
+[0;32mI (3825) FLEX_SENSOR: Flex Sensor ADC Value: 1328[0m
+[0;32mI (4325) FLEX_SENSOR: Flex Sensor ADC Value: 1318[0m
+[0;32mI (4825) FLEX_SENSOR: Flex Sensor ADC Value: 1323[0m
+[0;32mI (5325) FLEX_SENSOR: Flex Sensor ADC Value: 1324[0m
+[0;32mI (5825) FLEX_SENSOR: Flex Sensor ADC Value: 1328[0m
+[0;32mI (6325) FLEX_SENSOR: Flex Sensor ADC Value: 1317[0m
+[0;32mI (6825) FLEX_SENSOR: Flex Sensor ADC Value: 1139[0m
+[0;32mI (7325) FLEX_SENSOR: Flex Sensor ADC Value: 1243[0m
+[0;32mI (7825) FLEX_SENSOR: Flex Sensor ADC Value: 1241[0m
+[0;32mI (8325) FLEX_SENSOR: Flex Sensor ADC Value: 1250[0m
+[0;32mI (8825) FLEX_SENSOR: Flex Sensor ADC Value: 1281[0m
+[0;32mI (9325) FLEX_SENSOR: Flex Sensor ADC Value: 1245[0m
+[0;32mI (9825) FLEX_SENSOR: Flex Sensor ADC Value: 1246[0m
+[0;32mI (10325) FLEX_SENSOR: Flex Sensor ADC Value: 1238[0m
+[0;32mI (10825) FLEX_SENSOR: Flex Sensor ADC Value: 1260[0m
+[0;32mI (11325) FLEX_SENSOR: Flex Sensor ADC Value: 1265[0m
+[0;32mI (11825) FLEX_SENSOR: Flex Sensor ADC Value: 1238[0m
+[0;32mI (12325) FLEX_SENSOR: Flex Sensor ADC Value: 1275[0m
+[0;32mI (12825) FLEX_SENSOR: Flex Sensor ADC Value: 1307[0m
+[0;32mI (13325) FLEX_SENSOR: Flex Sensor ADC Value: 1023[0m
+[0;32mI (13825) FLEX_SENSOR: Flex Sensor ADC Value: 1297[0m
+[0;32mI (14325) FLEX_SENSOR: Flex Sensor ADC Value: 991[0m
+[0;32mI (14825) FLEX_SENSOR: Flex Sensor ADC Value: 1227[0m
+[0;32mI (15325) FLEX_SENSOR: Flex Sensor ADC Value: 1190[0m
+[0;32mI (15825) FLEX_SENSOR: Flex Sensor ADC Value: 1170[0m
+[0;32mI (16325) FLEX_SENSOR: Flex Sensor ADC Value: 1237[0m
+[0;32mI (16825) FLEX_SENSOR: Flex Sensor ADC Value: 1086[0m
+[0;32mI (17325) FLEX_SENSOR: Flex Sensor ADC Value: 1248[0m
+[0;32mI (17825) FLEX_SENSOR: Flex Sensor ADC Value: 1194[0m
+[0;32mI (18325) FLEX_SENSOR: Flex Sensor ADC Value: 1201[0m
+[0;32mI (18825) FLEX_SENSOR: Flex Sensor ADC Value: 1181[0m
+[0;32mI (19325) FLEX_SENSOR: Flex Sensor ADC Value: 1148[0m
+[0;32mI (19825) FLEX_SENSOR: Flex Sensor ADC Value: 1176[0m
+[0;32mI (20325) FLEX_SENSOR: Flex Sensor ADC Value: 1189[0m
+[0;32mI (20825) FLEX_SENSOR: Flex Sensor ADC Value: 1178[0m
+[0;32mI (21325) FLEX_SENSOR: Flex Sensor ADC Value: 1200[0m
+[0;32mI (21825) FLEX_SENSOR: Flex Sensor ADC Value: 1228[0m
+[0;32mI (22325) FLEX_SENSOR: Flex Sensor ADC Value: 1231[0m
+[0;32mI (22825) FLEX_SENSOR: Flex Sensor ADC Value: 1362[0m
+[0;32mI (23325) FLEX_SENSOR: Flex Sensor ADC Value: 1277[0m
+[0;32mI (23825) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (24325) FLEX_SENSOR: Flex Sensor ADC Value: 1286[0m
+[0;32mI (24825) FLEX_SENSOR: Flex Sensor ADC Value: 1283[0m
+[0;32mI (25325) FLEX_SENSOR: Flex Sensor ADC Value: 1289[0m
+[0;32mI (25825) FLEX_SENSOR: Flex Sensor ADC Value: 1284[0m
+[0;32mI (26325) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (26825) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (27325) FLEX_SENSOR: Flex Sensor ADC Value: 1289[0m
+[0;32mI (27825) FLEX_SENSOR: Flex Sensor ADC Value: 1294[0m
+[0;32mI (28325) FLEX_SENSOR: Flex Sensor ADC Value: 1294[0m
+[0;32mI (28825) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (29325) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (29825) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (30325) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (30825) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (31325) FLEX_SENSOR: Flex Sensor ADC Value: 1295[0m
+[0;32mI (31825) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (32325) FLEX_SENSOR: Flex Sensor ADC Value: 1276[0m
+[0;32mI (32825) FLEX_SENSOR: Flex Sensor ADC Value: 1277[0m
+[0;32mI (33325) FLEX_SENSOR: Flex Sensor ADC Value: 1360[0m
+[0;32mI (33825) FLEX_SENSOR: Flex Sensor ADC Value: 1201[0m
+[0;32mI (34325) FLEX_SENSOR: Flex Sensor ADC Value: 1297[0m
+[0;32mI (34825) FLEX_SENSOR: Flex Sensor ADC Value: 1287[0m
+[0;32mI (35325) FLEX_SENSOR: Flex Sensor ADC Value: 1119[0m
+[0;32mI (35825) FLEX_SENSOR: Flex Sensor ADC Value: 1211[0m
+[0;32mI (36325) FLEX_SENSOR: Flex Sensor ADC Value: 1232[0m
+[0;32mI (36825) FLEX_SENSOR: Flex Sensor ADC Value: 1193[0m
+[0;32mI (37325) FLEX_SENSOR: Flex Sensor ADC Value: 1203[0m
+[0;32mI (37825) FLEX_SENSOR: Flex Sensor ADC Value: 1193[0m
+[0;32mI (38325) FLEX_SENSOR: Flex Sensor ADC Value: 1205[0m
+[0;32mI (38825) FLEX_SENSOR: Flex Sensor ADC Value: 1231[0m
+[0;32mI (39325) FLEX_SENSOR: Flex Sensor ADC Value: 1159[0m
+[0;32mI (39825) FLEX_SENSOR: Flex Sensor ADC Value: 1199[0m
+[0;32mI (40325) FLEX_SENSOR: Flex Sensor ADC Value: 1165[0m
+[0;32mI (40825) FLEX_SENSOR: Flex Sensor ADC Value: 1172[0m
+[0;32mI (41325) FLEX_SENSOR: Flex Sensor ADC Value: 1239[0m
+[0;32mI (41825) FLEX_SENSOR: Flex Sensor ADC Value: 1200[0m
+[0;32mI (42325) FLEX_SENSOR: Flex Sensor ADC Value: 1203[0m
+[0;32mI (42825) FLEX_SENSOR: Flex Sensor ADC Value: 1174[0m
+[0;32mI (43325) FLEX_SENSOR: Flex Sensor ADC Value: 1230[0m
+[0;32mI (43825) FLEX_SENSOR: Flex Sensor ADC Value: 1186[0m
+[0;32mI (44325) FLEX_SENSOR: Flex Sensor ADC Value: 1173[0m
+[0;32mI (44825) FLEX_SENSOR: Flex Sensor ADC Value: 1183[0m
+[0;32mI (45325) FLEX_SENSOR: Flex Sensor ADC Value: 1179[0m
+[0;32mI (45825) FLEX_SENSOR: Flex Sensor ADC Value: 1287[0m
+[0;32mI (46325) FLEX_SENSOR: Flex Sensor ADC Value: 1166[0m
+[0;32mI (46825) FLEX_SENSOR: Flex Sensor ADC Value: 1199[0m
+[0;32mI (47325) FLEX_SENSOR: Flex Sensor ADC Value: 1242[0m
+[0;32mI (47825) FLEX_SENSOR: Flex Sensor ADC Value: 1198[0m
+[0;32mI (48325) FLEX_SENSOR: Flex Sensor ADC Value: 1262[0m
+[0;32mI (48825) FLEX_SENSOR: Flex Sensor ADC Value: 1197[0m
+[0;32mI (49325) FLEX_SENSOR: Flex Sensor ADC Value: 1320[0m
+[0;32mI (49825) FLEX_SENSOR: Flex Sensor ADC Value: 1287[0m
+[0;32mI (50325) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (50825) FLEX_SENSOR: Flex Sensor ADC Value: 1289[0m
+[0;32mI (51325) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (51825) FLEX_SENSOR: Flex Sensor ADC Value: 1289[0m
+[0;32mI (52325) FLEX_SENSOR: Flex Sensor ADC Value: 1289[0m
+[0;32mI (52825) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (53325) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (53825) FLEX_SENSOR: Flex Sensor ADC Value: 1287[0m
+[0;32mI (54325) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (54825) FLEX_SENSOR: Flex Sensor ADC Value: 1290[0m
+[0;32mI (55325) FLEX_SENSOR: Flex Sensor ADC Value: 1294[0m
+[0;32mI (55825) FLEX_SENSOR: Flex Sensor ADC Value: 1292[0m
+[0;32mI (56325) FLEX_SENSOR: Flex Sensor ADC Value: 1290[0m
+[0;32mI (56825) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (57325) FLEX_SENSOR: Flex Sensor ADC Value: 1292[0m
+[0;32mI (57825) FLEX_SENSOR: Flex Sensor ADC Value: 1294[0m
+[0;32mI (58325) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (58825) FLEX_SENSOR: Flex Sensor ADC Value: 1294[0m
+[0;32mI (59325) FLEX_SENSOR: Flex Sensor ADC Value: 1293[0m
+[0;32mI (59825) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (60325) FLEX_SENSOR: Flex Sensor ADC Value: 1296[0m
+[0;32mI (60825) FLEX_SENSOR: Flex Sensor ADC Value: 1242[0m
+[0;32mI (61325) FLEX_SENSOR: Flex Sensor ADC Value: 1224[0m
+[0;32mI (61825) FLEX_SENSOR: Flex Sensor ADC Value: 1267[0m
+[0;32mI (62325) FLEX_SENSOR: Flex Sensor ADC Value: 1334[0m
+[0;32mI (62825) FLEX_SENSOR: Flex Sensor ADC Value: 1291[0m
+[0;32mI (63325) FLEX_SENSOR: Flex Sensor ADC Value: 1272[0m
+[0;32mI (63825) FLEX_SENSOR: Flex Sensor ADC Value: 1171[0m
+[0;32mI (64325) FLEX_SENSOR: Flex Sensor ADC Value: 968[0m
+[0;32mI (64825) FLEX_SENSOR: Flex Sensor ADC Value: 1311[0m
+[0;32mI (65325) FLEX_SENSOR: Flex Sensor ADC Value: 1200[0m
+[0;32mI (65825) FLEX_SENSOR: Flex Sensor ADC Value: 1223[0m
+[0;32mI (66325) FLEX_SENSOR: Flex Sensor ADC Value: 1230[0m
+[0;32mI (66825) FLEX_SENSOR: Flex Sensor ADC Value: 1131[0m
+[0;32mI (67325) FLEX_SENSOR: Flex Sensor ADC Value: 1168[0m
+[0;32mI (67825) FLEX_SENSOR: Flex Sensor ADC Value: 1195[0m
+[0;32mI (68325) FLEX_SENSOR: Flex Sensor ADC Value: 954[0m
+[0;32mI (68825) FLEX_SENSOR: Flex Sensor ADC Value: 1136[0m
+[0;32mI (69325) FLEX_SENSOR: Flex Sensor ADC Value: 1341[0m
+[0;32mI (69825) FLEX_SENSOR: Flex Sensor ADC Value: 1164[0m
+[0;32mI (70325) FLEX_SENSOR: Flex Sensor ADC Value: 1194[0m
+[0;32mI (70825) FLEX_SENSOR: Flex Sensor ADC Value: 1136[0m
+[0;32mI (71325) FLEX_SENSOR: Flex Sensor ADC Value: 1139[0m
+[0;32mI (71825) FLEX_SENSOR: Flex Sensor ADC Value: 1163[0m
+[0;32mI (72325) FLEX_SENSOR: Flex Sensor ADC Value: 1167[0m
+[0;32mI (72825) FLEX_SENSOR: Flex Sensor ADC Value: 1185[0m
+[0;32mI (73325) FLEX_SENSOR: Flex Sensor ADC Value: 1184[0m
+[0;32mI (73825) FLEX_SENSOR: Flex Sensor ADC Value: 1200[0m
+[0;32mI (74325) FLEX_SENSOR: Flex Sensor ADC Value: 1195[0m
+[0;32mI (74825) FLEX_SENSOR: Flex Sensor ADC Value: 1278[0m
+[0;32mI (75325) FLEX_SENSOR: Flex Sensor ADC Value: 1271[0m
+[0;32mI (75825) FLEX_SENSOR: Flex Sensor ADC Value: 1281[0m
+[0;32mI (76325) FLEX_SENSOR: Flex Sensor ADC Value: 1319[0m
+[0;32mI (76825) FLEX_SENSOR: Flex Sensor ADC Value: 1281[0m
+[0;32mI (77325) FLEX_SENSOR: Flex Sensor ADC Value: 1285[0m
+[0;32mI (77825) FLEX_SENSOR: Flex Sensor ADC Value: 1283[0m

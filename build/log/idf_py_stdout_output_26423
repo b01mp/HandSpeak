@@ -1,0 +1,194 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 14:03:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09bfch ( 39932) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019c24 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00019c30 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=0001be64 vaddr=40080000 size=041b4h ( 16820) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=149a0h ( 84384) map[0m
+[0;32mI (169) esp_image: segment 5: paddr=000349c8 vaddr=400841b4 size=084b4h ( 33972) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (200) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     SignSpeak[0m
+[0;32mI (218) cpu_start: App version:      bddc9fa-dirty[0m
+[0;32mI (223) cpu_start: Compile time:     Mar 22 2025 14:02:54[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  55312ecd9540790d...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008C668 len 00013998 (78 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+[0;32mI (375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1501[0m
+[0;32mI (3525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1470[0m
+[0;32mI (3825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1414[0m
+[0;32mI (4275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1453[0m
+[0;32mI (5775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1578[0m
+[0;32mI (5925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1275[0m
+[0;32mI (6075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1553[0m
+[0;32mI (6225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1359[0m
+[0;32mI (6375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1433[0m
+[0;32mI (6525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1348[0m
+[0;32mI (6675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1391[0m
+[0;32mI (6825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1511[0m
+[0;32mI (6975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1455[0m
+[0;32mI (8325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1418[0m
+[0;32mI (8775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1474[0m
+[0;32mI (8925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1348[0m
+[0;32mI (9075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1451[0m
+[0;32mI (9225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1396[0m
+[0;32mI (9675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1438[0m
+[0;32mI (9825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1396[0m
+[0;32mI (10425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1357[0m
+[0;32mI (10575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1432[0m
+[0;32mI (10875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1399[0m
+[0;32mI (11775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1447[0m
+[0;32mI (11925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1413[0m
+[0;32mI (12075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1459[0m
+[0;32mI (12225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1386[0m
+[0;32mI (12375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1448[0m
+[0;32mI (12525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1413[0m
+[0;32mI (12675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1461[0m
+[0;32mI (15675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1550[0m
+[0;32mI (15825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1422[0m
+[0;32mI (16275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1706[0m
+[0;32mI (16425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1156[0m
+[0;32mI (16575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1420[0m
+[0;32mI (16725) FLEX_SENSOR: Flex Sensor Changed! New Value: 1353[0m
+[0;32mI (16875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1430[0m
+[0;32mI (17025) FLEX_SENSOR: Flex Sensor Changed! New Value: 1394[0m
+[0;32mI (17475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1463[0m
+[0;32mI (17625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1536[0m
+[0;32mI (17775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1420[0m
+[0;32mI (17925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1472[0m
+[0;32mI (18075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1592[0m
+[0;32mI (18225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1652[0m
+[0;32mI (18375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1392[0m
+[0;32mI (18525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1425[0m
+[0;32mI (18675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1287[0m
+[0;32mI (18825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1459[0m
+[0;32mI (18975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1380[0m
+[0;32mI (19125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1454[0m
+[0;32mI (19275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1486[0m
+[0;32mI (21975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1443[0m
+[0;32mI (22125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1557[0m
+[0;32mI (22275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1489[0m
+[0;32mI (22425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1530[0m
+[0;32mI (22575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1480[0m
+[0;32mI (39375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1446[0m
+[0;32mI (41175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1327[0m
+[0;32mI (41325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1458[0m
+[0;32mI (41475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1411[0m
+[0;32mI (41625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1504[0m
+[0;32mI (41775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1381[0m
+[0;32mI (42375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1463[0m
+[0;32mI (42525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1507[0m
+[0;32mI (42675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1408[0m
+[0;32mI (42825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1470[0m
+[0;32mI (43875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1411[0m
+[0;32mI (44025) FLEX_SENSOR: Flex Sensor Changed! New Value: 1445[0m
+[0;32mI (44175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1385[0m
+[0;32mI (44325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1440[0m
+[0;32mI (44625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1493[0m
+[0;32mI (44775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1439[0m
+[0;32mI (44925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1499[0m
+[0;32mI (45075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1412[0m
+[0;32mI (45525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1469[0m
+[0;32mI (45675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1388[0m
+[0;32mI (45825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1448[0m
+[0;32mI (45975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1401[0m
+[0;32mI (46125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1457[0m
+[0;32mI (46275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1377[0m
+[0;32mI (46575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1343[0m
+[0;32mI (46725) FLEX_SENSOR: Flex Sensor Changed! New Value: 1408[0m
+[0;32mI (46875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1362[0m
+[0;32mI (47175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1290[0m
+[0;32mI (47325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1378[0m
+[0;32mI (47475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1282[0m
+[0;32mI (47625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1393[0m
+[0;32mI (47775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1350[0m
+[0;32mI (47925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1403[0m
+[0;32mI (48075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1316[0m
+[0;32mI (48225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1366[0m
+[0;32mI (48375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1329[0m
+[0;32mI (48675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1279[0m
+[0;32mI (48825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1329[0m
+[0;32mI (48975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1275[0m
+[0;32mI (49125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1340[0m
+[0;32mI (49275) FLEX_SENSOR: Flex Sensor Changed! New Value: 1286[0m
+[0;32mI (49425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1321[0m
+[0;32mI (49875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1269[0m
+[0;32mI (50025) FLEX_SENSOR: Flex Sensor Changed! New Value: 1319[0m
+[0;32mI (50175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1279[0m
+[0;32mI (50325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1338[0m
+[0;32mI (50475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1266[0m
+[0;32mI (50625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1338[0m
+[0;32mI (50775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1264[0m
+[0;32mI (50925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1326[0m
+[0;32mI (51075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1271[0m
+[0;32mI (51225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1316[0m
+[0;32mI (51975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1281[0m
+[0;32mI (52125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1313[0m
+[0;32mI (52425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1358[0m
+[0;32mI (52575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1319[0m
+[0;32mI (52725) FLEX_SENSOR: Flex Sensor Changed! New Value: 1355[0m
+[0;32mI (52875) FLEX_SENSOR: Flex Sensor Changed! New Value: 1277[0m
+[0;32mI (53025) FLEX_SENSOR: Flex Sensor Changed! New Value: 1388[0m
+[0;32mI (53175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1322[0m
+[0;32mI (53475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1238[0m
+[0;32mI (53625) FLEX_SENSOR: Flex Sensor Changed! New Value: 1319[0m
+[0;32mI (53775) FLEX_SENSOR: Flex Sensor Changed! New Value: 1283[0m
+[0;32mI (53925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1324[0m
+[0;32mI (54075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1242[0m
+[0;32mI (54225) FLEX_SENSOR: Flex Sensor Changed! New Value: 1334[0m
+[0;32mI (54375) FLEX_SENSOR: Flex Sensor Changed! New Value: 1290[0m
+[0;32mI (54525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1252[0m
+[0;32mI (54825) FLEX_SENSOR: Flex Sensor Changed! New Value: 1348[0m
+[0;32mI (54975) FLEX_SENSOR: Flex Sensor Changed! New Value: 1484[0m
+[0;32mI (55125) FLEX_SENSOR: Flex Sensor Changed! New Value: 1336[0m
+[0;32mI (55425) FLEX_SENSOR: Flex Sensor Changed! New Value: 1385[0m
+[0;32mI (55575) FLEX_SENSOR: Flex Sensor Changed! New Value: 1295[0m
+[0;32mI (55725) FLEX_SENSOR: Flex Sensor Changed! New Value: 1367[0m
+[0;32mI (56175) FLEX_SENSOR: Flex Sensor Changed! New Value: 1316[0m
+[0;32mI (56325) FLEX_SENSOR: Flex Sensor Changed! New Value: 1253[0m
+[0;32mI (56475) FLEX_SENSOR: Flex Sensor Changed! New Value: 1296[0m
+[0;32mI (56925) FLEX_SENSOR: Flex Sensor Changed! New Value: 1370[0m
+[0;32mI (57075) FLEX_SENSOR: Flex Sensor Changed! New Value: 1418[0m
+[0;32mI (57525) FLEX_SENSOR: Flex Sensor Changed! New Value: 1512[0m
+[0;32mI (57675) FLEX_SENSOR: Flex Sensor Changed! New Value: 1453[0m

@@ -1,4 +1,4 @@
-/* * Data converted from /home/bhavesh/SignSpeak/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/bhavesh/Talk-To-My-Hand/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

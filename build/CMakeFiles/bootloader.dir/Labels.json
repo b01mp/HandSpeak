@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/CMakeFiles/bootloader"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/home/bhavesh/SignSpeak/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/bhavesh/Talk-To-My-Hand/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
