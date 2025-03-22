@@ -1,0 +1,586 @@
+sp_image: segment 3: paddr=0001be64 vaddr=40080000 size=041b4h ( 16820) load[0m
+[0;32mIets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2025 14:03:01[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09bfch ( 39932) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019c24 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=00019c30 vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=0001be64 vaddr=40080000 size=041b4h ( 16820) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14b08h ( 84744) map[0m
+[0;32mI (169) esp_image: segment 5: paddr=00034b30 vaddr=400841b4 size=084b4h ( 33972) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     SignSpeak[0m
+[0;32mI (218) cpu_start: App version:      1f3e926-dirty[0m
+[0;32mI (223) cpu_start: Compile time:     Mar 22 2025 18:15:07[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  dc8545a3f26307a2...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (240) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (245) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (250) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (262) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 3FFB2B40 len 0002D4C0 (181 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 4008C668 len 00013998 (78 KiB): IRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (302) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+[0;32mI (575) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (575) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (575) FLEX_SENSOR: Flex3 Value: 1308[0m
+[0;32mI (575) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (575) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (585) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (585) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (595) FLEX_SENSOR: Flex3 Value: 1308[0m
+[0;32mI (595) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (595) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (605) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (605) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (615) FLEX_SENSOR: Flex3 Value: 1308[0m
+[0;32mI (615) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (625) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (625) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (635) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (635) FLEX_SENSOR: Flex3 Value: 1308[0m
+[0;32mI (635) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (645) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (645) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (655) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (655) FLEX_SENSOR: Flex3 Value: 1308[0m
+[0;32mI (665) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (665) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (11175) FLEX_SENSOR: Flex1 Value: 1543[0m
+[0;32mI (11175) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (11175) FLEX_SENSOR: Flex3 Value: 1306[0m
+[0;32mI (11175) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (11175) FLEX_SENSOR: Flex5 Value: 1459[0m
+
+[0;32mI (11535) FLEX_SENSOR: Flex1 Value: 1529[0m
+[0;32mI (11535) FLEX_SENSOR: Flex2 Value: 1510[0m
+[0;32mI (11535) FLEX_SENSOR: Flex3 Value: 1305[0m
+[0;32mI (11535) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (11535) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (11545) FLEX_SENSOR: Flex1 Value: 1529[0m
+[0;32mI (11545) FLEX_SENSOR: Flex2 Value: 1510[0m
+[0;32mI (11555) FLEX_SENSOR: Flex3 Value: 1305[0m
+[0;32mI (11555) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (11565) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (11915) FLEX_SENSOR: Flex1 Value: 1528[0m
+[0;32mI (11915) FLEX_SENSOR: Flex2 Value: 1519[0m
+[0;32mI (11915) FLEX_SENSOR: Flex3 Value: 1242[0m
+[0;32mI (11915) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (11915) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (12275) FLEX_SENSOR: Flex1 Value: 1529[0m
+[0;32mI (12275) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (12275) FLEX_SENSOR: Flex3 Value: 1216[0m
+[0;32mI (12275) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (12275) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (12635) FLEX_SENSOR: Flex1 Value: 1531[0m
+[0;32mI (12635) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (12635) FLEX_SENSOR: Flex3 Value: 1227[0m
+[0;32mI (12635) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (12635) FLEX_SENSOR: Flex5 Value: 1459[0m
+
+[0;32mI (12645) FLEX_SENSOR: Flex1 Value: 1531[0m
+[0;32mI (12645) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (12655) FLEX_SENSOR: Flex3 Value: 1227[0m
+[0;32mI (12655) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (12665) FLEX_SENSOR: Flex5 Value: 1459[0m
+
+[0;32mI (17915) FLEX_SENSOR: Flex1 Value: 1527[0m
+[0;32mI (17915) FLEX_SENSOR: Flex2 Value: 1507[0m
+[0;32mI (17915) FLEX_SENSOR: Flex3 Value: 1233[0m
+[0;32mI (17915) FLEX_SENSOR: Flex4 Value: 1589[0m
+[0;32mI (17915) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (18275) FLEX_SENSOR: Flex1 Value: 1526[0m
+[0;32mI (18275) FLEX_SENSOR: Flex2 Value: 1519[0m
+[0;32mI (18275) FLEX_SENSOR: Flex3 Value: 1236[0m
+[0;32mI (18275) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (18275) FLEX_SENSOR: Flex5 Value: 1458[0m
+
+[0;32mI (19685) FLEX_SENSOR: Flex1 Value: 1546[0m
+[0;32mI (19685) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (19685) FLEX_SENSOR: Flex3 Value: 1237[0m
+[0;32mI (19685) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (19685) FLEX_SENSOR: Flex5 Value: 1459[0m
+
+[0;32mI (20045) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (20045) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (20045) FLEX_SENSOR: Flex3 Value: 1239[0m
+[0;32mI (20045) FLEX_SENSOR: Flex4 Value: 1591[0m
+[0;32mI (20045) FLEX_SENSOR: Flex5 Value: 1463[0m
+
+[0;32mI (20055) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (20055) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (20065) FLEX_SENSOR: Flex3 Value: 1239[0m
+[0;32mI (20065) FLEX_SENSOR: Flex4 Value: 1591[0m
+[0;32mI (20075) FLEX_SENSOR: Flex5 Value: 1463[0m
+
+[0;32mI (23925) FLEX_SENSOR: Flex1 Value: 1531[0m
+[0;32mI (23925) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (23925) FLEX_SENSOR: Flex3 Value: 1240[0m
+[0;32mI (23925) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (23925) FLEX_SENSOR: Flex5 Value: 1469[0m
+
+[0;32mI (24285) FLEX_SENSOR: Flex1 Value: 1529[0m
+[0;32mI (24285) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (24285) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (24285) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (24285) FLEX_SENSOR: Flex5 Value: 1463[0m
+
+[0;32mI (24295) FLEX_SENSOR: Flex1 Value: 1529[0m
+[0;32mI (24295) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (24305) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (24305) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (24315) FLEX_SENSOR: Flex5 Value: 1463[0m
+
+[0;32mI (33065) FLEX_SENSOR: Flex1 Value: 1470[0m
+[0;32mI (33065) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (33065) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (33065) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (33065) FLEX_SENSOR: Flex5 Value: 1451[0m
+
+[0;32mI (33425) FLEX_SENSOR: Flex1 Value: 1417[0m
+[0;32mI (33425) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (33425) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (33425) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (33425) FLEX_SENSOR: Flex5 Value: 1461[0m
+
+[0;32mI (34835) FLEX_SENSOR: Flex1 Value: 1428[0m
+[0;32mI (34835) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (34835) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (34835) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (34835) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (38695) FLEX_SENSOR: Flex1 Value: 1432[0m
+[0;32mI (38695) FLEX_SENSOR: Flex2 Value: 1538[0m
+[0;32mI (38695) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (38695) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (38695) FLEX_SENSOR: Flex5 Value: 1461[0m
+
+[0;32mI (39055) FLEX_SENSOR: Flex1 Value: 1437[0m
+[0;32mI (39055) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (39055) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (39055) FLEX_SENSOR: Flex4 Value: 1591[0m
+[0;32mI (39055) FLEX_SENSOR: Flex5 Value: 1464[0m
+
+[0;32mI (39415) FLEX_SENSOR: Flex1 Value: 1441[0m
+[0;32mI (39415) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (39415) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (39415) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (39415) FLEX_SENSOR: Flex5 Value: 1462[0m
+
+[0;32mI (41175) FLEX_SENSOR: Flex1 Value: 1421[0m
+[0;32mI (41175) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (41175) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (41175) FLEX_SENSOR: Flex4 Value: 1589[0m
+[0;32mI (41175) FLEX_SENSOR: Flex5 Value: 1460[0m
+
+[0;32mI (41535) FLEX_SENSOR: Flex1 Value: 1435[0m
+[0;32mI (41535) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (41535) FLEX_SENSOR: Flex3 Value: 1293[0m
+[0;32mI (41535) FLEX_SENSOR: Flex4 Value: 1591[0m
+[0;32mI (41535) FLEX_SENSOR: Flex5 Value: 1461[0m
+
+[0;32mI (41895) FLEX_SENSOR: Flex1 Value: 1436[0m
+[0;32mI (41895) FLEX_SENSOR: Flex2 Value: 1519[0m
+[0;32mI (41895) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (41895) FLEX_SENSOR: Flex4 Value: 1579[0m
+[0;32mI (41895) FLEX_SENSOR: Flex5 Value: 1458[0m
+
+[0;32mI (42255) FLEX_SENSOR: Flex1 Value: 1438[0m
+[0;32mI (42255) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (42255) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (42255) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (42255) FLEX_SENSOR: Flex5 Value: 1457[0m
+
+[0;32mI (46115) FLEX_SENSOR: Flex1 Value: 1438[0m
+[0;32mI (46115) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (46115) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (46115) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (46115) FLEX_SENSOR: Flex5 Value: 4095[0m
+
+[0;32mI (46825) FLEX_SENSOR: Flex1 Value: 1438[0m
+[0;32mI (46825) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (46825) FLEX_SENSOR: Flex3 Value: 1297[0m
+[0;32mI (46825) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (46825) FLEX_SENSOR: Flex5 Value: 1309[0m
+
+[0;32mI (47885) FLEX_SENSOR: Flex1 Value: 1441[0m
+[0;32mI (47885) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (47885) FLEX_SENSOR: Flex3 Value: 1298[0m
+[0;32mI (47885) FLEX_SENSOR: Flex4 Value: 1591[0m
+[0;32mI (47885) FLEX_SENSOR: Flex5 Value: 1320[0m
+
+[0;32mI (50345) FLEX_SENSOR: Flex1 Value: 1441[0m
+[0;32mI (50345) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (50345) FLEX_SENSOR: Flex3 Value: 1276[0m
+[0;32mI (50345) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (50345) FLEX_SENSOR: Flex5 Value: 1326[0m
+
+[0;32mI (50705) FLEX_SENSOR: Flex1 Value: 1442[0m
+[0;32mI (50705) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (50705) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (50705) FLEX_SENSOR: Flex4 Value: 1590[0m
+[0;32mI (50705) FLEX_SENSOR: Flex5 Value: 1328[0m
+
+[0;32mI (52115) FLEX_SENSOR: Flex1 Value: 1439[0m
+[0;32mI (52115) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (52115) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (52115) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (52115) FLEX_SENSOR: Flex5 Value: 1331[0m
+
+[0;32mI (56675) FLEX_SENSOR: Flex1 Value: 1497[0m
+[0;32mI (56675) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (56675) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (56675) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (56675) FLEX_SENSOR: Flex5 Value: 1440[0m
+
+[0;32mI (56685) FLEX_SENSOR: Flex1 Value: 1497[0m
+[0;32mI (56685) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (56695) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (56695) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (56705) FLEX_SENSOR: Flex5 Value: 1440[0m
+
+[0;32mI (57055) FLEX_SENSOR: Flex1 Value: 1513[0m
+[0;32mI (57055) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (57055) FLEX_SENSOR: Flex3 Value: 1297[0m
+[0;32mI (57055) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (57055) FLEX_SENSOR: Flex5 Value: 1441[0m
+
+[0;32mI (60915) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (60915) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (60915) FLEX_SENSOR: Flex3 Value: 1299[0m
+[0;32mI (60915) FLEX_SENSOR: Flex4 Value: 1573[0m
+[0;32mI (60915) FLEX_SENSOR: Flex5 Value: 1446[0m
+
+[0;32mI (61275) FLEX_SENSOR: Flex1 Value: 1510[0m
+[0;32mI (61275) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (61275) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (61275) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (61275) FLEX_SENSOR: Flex5 Value: 1444[0m
+
+[0;32mI (62685) FLEX_SENSOR: Flex1 Value: 1512[0m
+[0;32mI (62685) FLEX_SENSOR: Flex2 Value: 1533[0m
+[0;32mI (62685) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (62685) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (62685) FLEX_SENSOR: Flex5 Value: 1445[0m
+
+[0;32mI (63045) FLEX_SENSOR: Flex1 Value: 1511[0m
+[0;32mI (63045) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (63045) FLEX_SENSOR: Flex3 Value: 1298[0m
+[0;32mI (63045) FLEX_SENSOR: Flex4 Value: 1596[0m
+[0;32mI (63045) FLEX_SENSOR: Flex5 Value: 1445[0m
+
+[0;32mI (65155) FLEX_SENSOR: Flex1 Value: 1512[0m
+[0;32mI (65155) FLEX_SENSOR: Flex2 Value: 1510[0m
+[0;32mI (65155) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (65155) FLEX_SENSOR: Flex4 Value: 1592[0m
+[0;32mI (65155) FLEX_SENSOR: Flex5 Value: 1447[0m
+
+[0;32mI (65515) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (65515) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (65515) FLEX_SENSOR: Flex3 Value: 1298[0m
+[0;32mI (65515) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (65515) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (71125) FLEX_SENSOR: Flex1 Value: 1513[0m
+[0;32mI (71125) FLEX_SENSOR: Flex2 Value: 1524[0m
+[0;32mI (71125) FLEX_SENSOR: Flex3 Value: 1283[0m
+[0;32mI (71125) FLEX_SENSOR: Flex4 Value: 1595[0m
+[0;32mI (71125) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (71485) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (71485) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (71485) FLEX_SENSOR: Flex3 Value: 1223[0m
+[0;32mI (71485) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (71485) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (72195) FLEX_SENSOR: Flex1 Value: 1515[0m
+[0;32mI (72195) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (72195) FLEX_SENSOR: Flex3 Value: 1234[0m
+[0;32mI (72195) FLEX_SENSOR: Flex4 Value: 1604[0m
+[0;32mI (72195) FLEX_SENSOR: Flex5 Value: 1450[0m
+
+[0;32mI (72555) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (72555) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (72555) FLEX_SENSOR: Flex3 Value: 1237[0m
+[0;32mI (72555) FLEX_SENSOR: Flex4 Value: 1593[0m
+[0;32mI (72555) FLEX_SENSOR: Flex5 Value: 1452[0m
+
+[0;32mI (75365) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (75365) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (75365) FLEX_SENSOR: Flex3 Value: 1284[0m
+[0;32mI (75365) FLEX_SENSOR: Flex4 Value: 1594[0m
+[0;32mI (75365) FLEX_SENSOR: Flex5 Value: 1446[0m
+
+[0;32mI (78525) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (78525) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (78525) FLEX_SENSOR: Flex3 Value: 1290[0m
+[0;32mI (78525) FLEX_SENSOR: Flex4 Value: 3091[0m
+[0;32mI (78525) FLEX_SENSOR: Flex5 Value: 1447[0m
+
+[0;32mI (78885) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (78885) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (78885) FLEX_SENSOR: Flex3 Value: 1293[0m
+[0;32mI (78885) FLEX_SENSOR: Flex4 Value: 1518[0m
+[0;32mI (78885) FLEX_SENSOR: Flex5 Value: 1451[0m
+
+[0;32mI (79245) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (79245) FLEX_SENSOR: Flex2 Value: 1534[0m
+[0;32mI (79245) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (79245) FLEX_SENSOR: Flex4 Value: 1475[0m
+[0;32mI (79245) FLEX_SENSOR: Flex5 Value: 1450[0m
+
+[0;32mI (79255) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (79255) FLEX_SENSOR: Flex2 Value: 1534[0m
+[0;32mI (79265) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (79265) FLEX_SENSOR: Flex4 Value: 1475[0m
+[0;32mI (79275) FLEX_SENSOR: Flex5 Value: 1450[0m
+
+[0;32mI (79625) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (79625) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (79625) FLEX_SENSOR: Flex3 Value: 1293[0m
+[0;32mI (79625) FLEX_SENSOR: Flex4 Value: 1475[0m
+[0;32mI (79625) FLEX_SENSOR: Flex5 Value: 1449[0m
+
+[0;32mI (79985) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (79985) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (79985) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (79985) FLEX_SENSOR: Flex4 Value: 1479[0m
+[0;32mI (79985) FLEX_SENSOR: Flex5 Value: 1452[0m
+
+[0;32mI (82095) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (82095) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (82095) FLEX_SENSOR: Flex3 Value: 1293[0m
+[0;32mI (82095) FLEX_SENSOR: Flex4 Value: 1486[0m
+[0;32mI (82095) FLEX_SENSOR: Flex5 Value: 1452[0m
+
+[0;32mI (82805) FLEX_SENSOR: Flex1 Value: 1519[0m
+[0;32mI (82805) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (82805) FLEX_SENSOR: Flex3 Value: 1292[0m
+[0;32mI (82805) FLEX_SENSOR: Flex4 Value: 1473[0m
+[0;32mI (82805) FLEX_SENSOR: Flex5 Value: 1449[0m
+
+[0;32mI (85265) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (85265) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (85265) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (85265) FLEX_SENSOR: Flex4 Value: 1517[0m
+[0;32mI (85265) FLEX_SENSOR: Flex5 Value: 1452[0m
+
+[0;32mI (85625) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (85625) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (85625) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (85625) FLEX_SENSOR: Flex4 Value: 1560[0m
+[0;32mI (85625) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (88085) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (88085) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (88085) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (88085) FLEX_SENSOR: Flex4 Value: 1564[0m
+[0;32mI (88085) FLEX_SENSOR: Flex5 Value: 1435[0m
+
+[0;32mI (88445) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (88445) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (88445) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (88445) FLEX_SENSOR: Flex4 Value: 1563[0m
+[0;32mI (88445) FLEX_SENSOR: Flex5 Value: 1296[0m
+
+[0;32mI (90205) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (90205) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (90205) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (90205) FLEX_SENSOR: Flex4 Value: 1565[0m
+[0;32mI (90205) FLEX_SENSOR: Flex5 Value: 1391[0m
+
+[0;32mI (90565) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (90565) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (90565) FLEX_SENSOR: Flex3 Value: 1298[0m
+[0;32mI (90565) FLEX_SENSOR: Flex4 Value: 1564[0m
+[0;32mI (90565) FLEX_SENSOR: Flex5 Value: 1437[0m
+
+[0;32mI (90925) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (90925) FLEX_SENSOR: Flex2 Value: 1533[0m
+[0;32mI (90925) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (90925) FLEX_SENSOR: Flex4 Value: 1567[0m
+[0;32mI (90925) FLEX_SENSOR: Flex5 Value: 1438[0m
+
+[0;32mI (91635) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (91635) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (91635) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (91635) FLEX_SENSOR: Flex4 Value: 1564[0m
+[0;32mI (91635) FLEX_SENSOR: Flex5 Value: 1436[0m
+
+[0;32mI (93045) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (93045) FLEX_SENSOR: Flex2 Value: 1521[0m
+[0;32mI (93045) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (93045) FLEX_SENSOR: Flex4 Value: 1576[0m
+[0;32mI (93045) FLEX_SENSOR: Flex5 Value: 1441[0m
+
+[0;32mI (93755) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (93755) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (93755) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (93755) FLEX_SENSOR: Flex4 Value: 1568[0m
+[0;32mI (93755) FLEX_SENSOR: Flex5 Value: 1425[0m
+
+[0;32mI (94115) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (94115) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (94115) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (94115) FLEX_SENSOR: Flex4 Value: 1567[0m
+[0;32mI (94115) FLEX_SENSOR: Flex5 Value: 1296[0m
+
+[0;32mI (94825) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (94825) FLEX_SENSOR: Flex2 Value: 1523[0m
+[0;32mI (94825) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (94825) FLEX_SENSOR: Flex4 Value: 1569[0m
+[0;32mI (94825) FLEX_SENSOR: Flex5 Value: 1314[0m
+
+[0;32mI (95185) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (95185) FLEX_SENSOR: Flex2 Value: 1522[0m
+[0;32mI (95185) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (95185) FLEX_SENSOR: Flex4 Value: 1570[0m
+[0;32mI (95185) FLEX_SENSOR: Flex5 Value: 1437[0m
+
+[0;32mI (97645) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (97645) FLEX_SENSOR: Flex2 Value: 1519[0m
+[0;32mI (97645) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (97645) FLEX_SENSOR: Flex4 Value: 1561[0m
+[0;32mI (97645) FLEX_SENSOR: Flex5 Value: 1436[0m
+
+[0;32mI (100805) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (100805) FLEX_SENSOR: Flex2 Value: 1484[0m
+[0;32mI (100805) FLEX_SENSOR: Flex3 Value: 1293[0m
+[0;32mI (100805) FLEX_SENSOR: Flex4 Value: 1569[0m
+[0;32mI (100805) FLEX_SENSOR: Flex5 Value: 1440[0m
+
+[0;32mI (101165) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (101165) FLEX_SENSOR: Flex2 Value: 1394[0m
+[0;32mI (101165) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (101165) FLEX_SENSOR: Flex4 Value: 1567[0m
+[0;32mI (101165) FLEX_SENSOR: Flex5 Value: 1440[0m
+
+[0;32mI (102575) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (102575) FLEX_SENSOR: Flex2 Value: 1408[0m
+[0;32mI (102575) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (102575) FLEX_SENSOR: Flex4 Value: 1569[0m
+[0;32mI (102575) FLEX_SENSOR: Flex5 Value: 1442[0m
+
+[0;32mI (104335) FLEX_SENSOR: Flex1 Value: 1514[0m
+[0;32mI (104335) FLEX_SENSOR: Flex2 Value: 1396[0m
+[0;32mI (104335) FLEX_SENSOR: Flex3 Value: 1294[0m
+[0;32mI (104335) FLEX_SENSOR: Flex4 Value: 1567[0m
+[0;32mI (104335) FLEX_SENSOR: Flex5 Value: 1444[0m
+
+[0;32mI (104695) FLEX_SENSOR: Flex1 Value: 1516[0m
+[0;32mI (104695) FLEX_SENSOR: Flex2 Value: 1385[0m
+[0;32mI (104695) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (104695) FLEX_SENSOR: Flex4 Value: 1569[0m
+[0;32mI (104695) FLEX_SENSOR: Flex5 Value: 1444[0m
+
+[0;32mI (112055) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (112055) FLEX_SENSOR: Flex2 Value: 1385[0m
+[0;32mI (112055) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (112055) FLEX_SENSOR: Flex4 Value: 1572[0m
+[0;32mI (112055) FLEX_SENSOR: Flex5 Value: 1443[0m
+
+[0;32mI (113115) FLEX_SENSOR: Flex1 Value: 1515[0m
+[0;32mI (113115) FLEX_SENSOR: Flex2 Value: 1477[0m
+[0;32mI (113115) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (113115) FLEX_SENSOR: Flex4 Value: 1571[0m
+[0;32mI (113115) FLEX_SENSOR: Flex5 Value: 1445[0m
+
+[0;32mI (114875) FLEX_SENSOR: Flex1 Value: 1519[0m
+[0;32mI (114875) FLEX_SENSOR: Flex2 Value: 1481[0m
+[0;32mI (114875) FLEX_SENSOR: Flex3 Value: 1297[0m
+[0;32mI (114875) FLEX_SENSOR: Flex4 Value: 1568[0m
+[0;32mI (114875) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (115235) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (115235) FLEX_SENSOR: Flex2 Value: 1480[0m
+[0;32mI (115235) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (115235) FLEX_SENSOR: Flex4 Value: 1560[0m
+[0;32mI (115235) FLEX_SENSOR: Flex5 Value: 1439[0m
+
+[0;32mI (115595) FLEX_SENSOR: Flex1 Value: 1517[0m
+[0;32mI (115595) FLEX_SENSOR: Flex2 Value: 1482[0m
+[0;32mI (115595) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (115595) FLEX_SENSOR: Flex4 Value: 1571[0m
+[0;32mI (115595) FLEX_SENSOR: Flex5 Value: 1446[0m
+
+[0;32mI (116305) FLEX_SENSOR: Flex1 Value: 1530[0m
+[0;32mI (116305) FLEX_SENSOR: Flex2 Value: 1482[0m
+[0;32mI (116305) FLEX_SENSOR: Flex3 Value: 1297[0m
+[0;32mI (116305) FLEX_SENSOR: Flex4 Value: 1569[0m
+[0;32mI (116305) FLEX_SENSOR: Flex5 Value: 1446[0m
+
+[0;32mI (116665) FLEX_SENSOR: Flex1 Value: 1515[0m
+[0;32mI (116665) FLEX_SENSOR: Flex2 Value: 1485[0m
+[0;32mI (116665) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (116665) FLEX_SENSOR: Flex4 Value: 1568[0m
+[0;32mI (116665) FLEX_SENSOR: Flex5 Value: 1443[0m
+
+[0;32mI (120875) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (120875) FLEX_SENSOR: Flex2 Value: 1490[0m
+[0;32mI (120875) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (120875) FLEX_SENSOR: Flex4 Value: 1572[0m
+[0;32mI (120875) FLEX_SENSOR: Flex5 Value: 1448[0m
+
+[0;32mI (125085) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (125085) FLEX_SENSOR: Flex2 Value: 1448[0m
+[0;32mI (125085) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (125085) FLEX_SENSOR: Flex4 Value: 1572[0m
+[0;32mI (125085) FLEX_SENSOR: Flex5 Value: 1444[0m
+
+[0;32mI (125445) FLEX_SENSOR: Flex1 Value: 1518[0m
+[0;32mI (125445) FLEX_SENSOR: Flex2 Value: 1407[0m
+[0;32mI (125445) FLEX_SENSOR: Flex3 Value: 1295[0m
+[0;32mI (125445) FLEX_SENSOR: Flex4 Value: 1572[0m
+[0;32mI (125445) FLEX_SENSOR: Flex5 Value: 1446[0m
+
+[0;32mI (127555) FLEX_SENSOR: Flex1 Value: 1519[0m
+[0;32mI (127555) FLEX_SENSOR: Flex2 Value: 1477[0m
+[0;32mI (127555) FLEX_SENSOR: Flex3 Value: 1296[0m
+[0;32mI (127555) FLEX_SENSOR: Flex4 Value: 1572[0m
+[0;32mI (127555) FLEX_SENSOR: Flex5 Value: 1447[0m
+

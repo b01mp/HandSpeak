@@ -55,7 +55,10 @@ void app_main(void) {
         // Print only if values have changed significantly
         for (int i = 0; i < 5; i++) {
             if (abs(values[i] - prev_values[i]) > 10) {  // Ignore small fluctuations
-                ESP_LOGI(TAG, "Flex%d Sensor Changed! New Value: %d", i + 1, values[i]);
+                for(int j = 0; j<5; j++){
+                    ESP_LOGI(TAG, "Flex%d Value: %d", j + 1, values[j]);
+                }
+                printf("\n");
                 prev_values[i] = values[i];  // Update previous value
             }
         }
