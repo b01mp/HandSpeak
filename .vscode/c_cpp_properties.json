@@ -4,10 +4,23 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/bhavesh/esp/esp-idf/**",
+                "/home/bhavesh/esp/esp-idf/components/**",
                 "/home/bhavesh/.espressif/tools/**"
             ],
-            "defines": ["ESP_PLATFORM"],
+            "defines": [
+                "ESP_PLATFORM"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        },
+        {
+            "name": "FreeRTOS",
+            "includePath": [
+                "/home/bhavesh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/**"
+            ],
+            "defines": [],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
             "cppStandard": "c++14",

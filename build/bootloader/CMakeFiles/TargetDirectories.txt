@@ -4,6 +4,7 @@
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/gen_project_binary.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/app.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/erase_flash.dir
+/home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/merge-bin.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/monitor.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/_project_elf_src.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/CMakeFiles/bootloader.elf.dir
@@ -51,6 +52,8 @@
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/efuse/CMakeFiles/efuse_test_table.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/efuse/CMakeFiles/edit_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/efuse/CMakeFiles/rebuild_cache.dir
+/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_security/CMakeFiles/edit_cache.dir
+/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_security/CMakeFiles/rebuild_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_system/CMakeFiles/edit_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_system/CMakeFiles/rebuild_cache.dir
@@ -59,6 +62,8 @@
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.dir
+/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
+/home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_common/CMakeFiles/edit_cache.dir
 /home/bhavesh/Talk-To-My-Hand/build/bootloader/esp-idf/esp_common/CMakeFiles/rebuild_cache.dir

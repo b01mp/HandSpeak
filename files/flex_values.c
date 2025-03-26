@@ -1,5 +1,5 @@
 /*
-This file contains the code for getting the filtered ADC values for five sensors
+code for getting adc values from the flex sensors
 */
 
 #include <stdio.h>

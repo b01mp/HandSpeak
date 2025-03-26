@@ -1,68 +1,87 @@
 #include <stdio.h>
+#include <math.h>
+#include "driver/i2s_std.h"
+#include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "esp_log.h"
-#include "esp_adc/adc_oneshot.h"
 
-#define SAMPLES 5  // Number of samples for averaging
+// Audio generation configuration
+#define I2S_NUM           I2S_NUM_0
+#define I2S_SAMPLE_RATE   44100
+#define I2S_SAMPLE_BITS   16
+#define I2S_CHANNEL_NUM   2
+#define AUDIO_BUFFER_SIZE 1024
 
-// Define Flex Sensor ADC Channels
-#define FLEX1 ADC_CHANNEL_5  // GPIO33
-#define FLEX2 ADC_CHANNEL_4  // GPIO32
-#define FLEX3 ADC_CHANNEL_7  // GPIO35
-#define FLEX4 ADC_CHANNEL_6  // GPIO34
-#define FLEX5 ADC_CHANNEL_3  // GPIO39
+// Pin Configuration
+#define I2S_BCK_PIN 26
+#define I2S_WS_PIN 25
+#define I2S_DATA_PIN 22
 
-static const char *TAG = "FLEX_SENSOR";
+i2s_chan_handle_t tx_handle;
 
-adc_oneshot_unit_handle_t adc1_handle;  // ADC Handle
+void init_i2s()
+{
+    i2s_chan_config_t chan_cfg = I2S_CHANNEL_DEFAULT_CONFIG(I2S_NUM_AUTO, I2S_ROLE_MASTER);
+    i2s_new_channel(&chan_cfg, &tx_handle, NULL);
 
-// Function to read and average ADC values
-int get_smoothed_adc_value(int channel) {
-    int sum = 0;
-    for (int i = 0; i < SAMPLES; i++) {
-        int value;
-        adc_oneshot_read(adc1_handle, channel, &value);
-        sum += value;
-        vTaskDelay(pdMS_TO_TICKS(10));  // Small delay to reduce noise
-    }
-    return sum / SAMPLES;  // Return average
+    i2s_std_config_t std_cfg = {
+        .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(48000),
+        .slot_cfg = I2S_STD_MSB_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_16BIT, I2S_SLOT_MODE_STEREO),
+        .gpio_cfg = {
+            .mclk = I2S_GPIO_UNUSED,
+            .bclk = I2S_BCK_PIN ,
+            .ws = I2S_WS_PIN,
+            .dout = I2S_DATA_PIN,
+            .din = I2S_GPIO_UNUSED,
+            .invert_flags = {
+                .mclk_inv = false,
+                .bclk_inv = false,
+                .ws_inv = false,
+            },
+        },
+    };
+
+    i2s_channel_init_std_mode(tx_handle, &std_cfg);
+    i2s_channel_enable(tx_handle);
 }
 
-void app_main(void) {
-    int prev_values[5] = {-1, -1, -1, -1, -1};  // Store previous values
+// Simple sine wave generation function
+void generate_sine_wave(int16_t* buffer, size_t buffer_size, float frequency) {
+    for (size_t i = 0; i < buffer_size; i++) {
+        // Generate sine wave
+        float time = (float)i / I2S_SAMPLE_RATE;
+        float sample = sin(2 * 3.14 * frequency * time);
+        
+        // Scale to 16-bit range
+        buffer[i] = (int16_t)(sample * 32767);
+    }
+}
 
-    // Initialize ADC
-    adc_oneshot_unit_init_cfg_t init_config = { .unit_id = ADC_UNIT_1 };
-    adc_oneshot_new_unit(&init_config, &adc1_handle);
+void audio_generation_task(void *pvParameters) {
+    // Allocate buffer for audio data
+    int16_t* audio_buffer = malloc(AUDIO_BUFFER_SIZE * sizeof(int16_t));
+    size_t bytes_written;
 
-    // Configure ADC Channels
-    adc_oneshot_chan_cfg_t config = { .atten = ADC_ATTEN_DB_12, .bitwidth = ADC_BITWIDTH_12 };
-    adc_oneshot_config_channel(adc1_handle, FLEX1, &config);
-    adc_oneshot_config_channel(adc1_handle, FLEX2, &config);
-    adc_oneshot_config_channel(adc1_handle, FLEX3, &config);
-    adc_oneshot_config_channel(adc1_handle, FLEX4, &config);
-    adc_oneshot_config_channel(adc1_handle, FLEX5, &config);
+    // Configure I2S
+    init_i2s();
 
     while (1) {
-        int values[5];
-        values[0] = get_smoothed_adc_value(FLEX1);
-        values[1] = get_smoothed_adc_value(FLEX2);
-        values[2] = get_smoothed_adc_value(FLEX3);
-        values[3] = get_smoothed_adc_value(FLEX4);
-        values[4] = get_smoothed_adc_value(FLEX5);
+        // Generate sine wave at 440 Hz (A4 note)
+        generate_sine_wave(audio_buffer, AUDIO_BUFFER_SIZE, 440.0);
 
-        // Print only if values have changed significantly
-        for (int i = 0; i < 5; i++) {
-            if (abs(values[i] - prev_values[i]) > 10) {  // Ignore small fluctuations
-                for(int j = 0; j<5; j++){
-                    ESP_LOGI(TAG, "Flex%d Value: %d", j + 1, values[j]);
-                }
-                printf("\n");
-                prev_values[i] = values[i];  // Update previous value
-            }
-        }
+        // Write audio data to I2S
+        i2s_channel_write(tx_handle, audio_buffer , AUDIO_BUFFER_SIZE * sizeof(int16_t), &bytes_written, portMAX_DELAY);
 
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(10)); // Small delay to prevent task flooding
     }
+}
+
+void app_main() {
+    // Create audio generation task
+    xTaskCreate(audio_generation_task, 
+                "Audio Generation", 
+                4096, 
+                NULL, 
+                5, 
+                NULL);
 }
