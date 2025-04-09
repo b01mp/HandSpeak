@@ -1,5 +1,7 @@
 /*
 code for getting adc values from the flex sensors
+
+FINAL CODE
 */
 
 #include <stdio.h>
@@ -8,9 +10,7 @@ code for getting adc values from the flex sensors
 #include "esp_log.h"
 #include "esp_adc/adc_oneshot.h"
 
-#define SAMPLES 5  // Number of samples for averaging
-
-// Define Flex Sensor ADC Channels
+#define SAMPLES 50
 #define FLEX1 ADC_CHANNEL_5  // GPIO33
 #define FLEX2 ADC_CHANNEL_4  // GPIO32
 #define FLEX3 ADC_CHANNEL_7  // GPIO35
@@ -19,22 +19,21 @@ code for getting adc values from the flex sensors
 
 static const char *TAG = "FLEX_SENSOR";
 
-adc_oneshot_unit_handle_t adc1_handle;  // ADC Handle
+adc_oneshot_unit_handle_t adc1_handle;
 
-// Function to read and average ADC values
 int get_smoothed_adc_value(int channel) {
     int sum = 0;
     for (int i = 0; i < SAMPLES; i++) {
         int value;
         adc_oneshot_read(adc1_handle, channel, &value);
         sum += value;
-        vTaskDelay(pdMS_TO_TICKS(10));  // Small delay to reduce noise
+        vTaskDelay(pdMS_TO_TICKS(2));
     }
-    return sum / SAMPLES;  // Return average
+    return sum / SAMPLES;
 }
 
 void app_main(void) {
-    int prev_values[5] = {-1, -1, -1, -1, -1};  // Store previous values
+    int prev_values[5] = {-1, -1, -1, -1, -1};  // Previous values for each sensor
 
     // Initialize ADC
     adc_oneshot_unit_init_cfg_t init_config = { .unit_id = ADC_UNIT_1 };
@@ -48,6 +47,8 @@ void app_main(void) {
     adc_oneshot_config_channel(adc1_handle, FLEX4, &config);
     adc_oneshot_config_channel(adc1_handle, FLEX5, &config);
 
+    ESP_LOGI(TAG, "Starting Flex Sensor Test on GPIO33, 32, 35, 34, 39...");
+
     while (1) {
         int values[5];
         values[0] = get_smoothed_adc_value(FLEX1);
@@ -56,13 +57,10 @@ void app_main(void) {
         values[3] = get_smoothed_adc_value(FLEX4);
         values[4] = get_smoothed_adc_value(FLEX5);
 
-        // Print only if values have changed significantly
+        // Check each sensor for significant change
         for (int i = 0; i < 5; i++) {
-            if (abs(values[i] - prev_values[i]) > 10) {  // Ignore small fluctuations
-                for(int j = 0; j<5; j++){
-                    ESP_LOGI(TAG, "Flex%d Value: %d", j + 1, values[j]);
-                }
-                printf("\n");
+            if (abs(values[i] - prev_values[i]) > 10 || prev_values[i] == -1) {
+                ESP_LOGI(TAG, "Flex%d Value: %d", i + 1, values[i]);
                 prev_values[i] = values[i];  // Update previous value
             }
         }

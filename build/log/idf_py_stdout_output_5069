@@ -1,2 +1,0 @@
-Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p flash -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py' '-p'
-[Errno 2] could not open port flash: [Errno 2] No such file or directory: 'flash'

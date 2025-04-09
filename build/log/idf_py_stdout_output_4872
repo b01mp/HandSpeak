@@ -1,0 +1,182 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr  6 2025 17:37:33[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a328h ( 41768) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a350 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001a374 vaddr=3ffb0000 size=02384h (  9092) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=0001c700 vaddr=40080000 size=03918h ( 14616) load[0m
+[0;32mI (119) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14b38h ( 84792) map[0m
+[0;32mI (150) esp_image: segment 5: paddr=00034b60 vaddr=40083918 size=09358h ( 37720) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (190) cpu_start: Pro cpu start user code[0m
+[0;32mI (190) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (190) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     SignSpeak[0m
+[0;32mI (198) app_init: App version:      81ea904-dirty[0m
+[0;32mI (203) app_init: Compile time:     Apr  6 2025 17:37:20[0m
+[0;32mI (209) app_init: ELF file SHA256:  f9465a15f1d56130...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (221) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (226) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (231) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (236) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2C78 len 0002D388 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (262) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (268) heap_init: At 4008CC70 len 00013390 (76 KiB): IRAM[0m
+[0;32mI (276) spi_flash: detected chip: generic[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (283) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (297) main_task: Started on CPU0[0m
+[0;32mI (307) main_task: Calling app_main()[0m
+[0;32mI (307) FLEX_SENSOR: Starting Flex Sensor Test on GPIO33, 32, 35, 34...[0m
+[0;32mI (317) FLEX_SENSOR: Flex1 Value: 1458[0m
+[0;32mI (317) FLEX_SENSOR: Flex2 Value: 1484[0m
+[0;32mI (317) FLEX_SENSOR: Flex3 Value: 1480[0m
+[0;32mI (327) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (5497) FLEX_SENSOR: Flex1 Value: 1469[0m
+[0;32mI (6047) FLEX_SENSOR: Flex1 Value: 1457[0m
+[0;32mI (6267) FLEX_SENSOR: Flex1 Value: 1446[0m
+[0;32mI (6487) FLEX_SENSOR: Flex1 Value: 1458[0m
+[0;32mI (6707) FLEX_SENSOR: Flex1 Value: 1444[0m
+[0;32mI (17047) FLEX_SENSOR: Flex1 Value: 1461[0m
+[0;32mI (17267) FLEX_SENSOR: Flex1 Value: 1472[0m
+[0;32mI (17487) FLEX_SENSOR: Flex1 Value: 1454[0m
+[0;32mI (17597) FLEX_SENSOR: Flex1 Value: 1468[0m
+[0;32mI (17817) FLEX_SENSOR: Flex1 Value: 1453[0m
+[0;32mI (18037) FLEX_SENSOR: Flex1 Value: 1470[0m
+[0;32mI (18367) FLEX_SENSOR: Flex1 Value: 1455[0m
+[0;32mI (18587) FLEX_SENSOR: Flex1 Value: 1467[0m
+[0;32mI (18917) FLEX_SENSOR: Flex1 Value: 1452[0m
+[0;32mI (21117) FLEX_SENSOR: Flex1 Value: 1440[0m
+[0;32mI (21227) FLEX_SENSOR: Flex1 Value: 1408[0m
+[0;32mI (21337) FLEX_SENSOR: Flex1 Value: 1387[0m
+[0;32mI (21447) FLEX_SENSOR: Flex1 Value: 1366[0m
+[0;32mI (21557) FLEX_SENSOR: Flex1 Value: 1380[0m
+[0;32mI (21667) FLEX_SENSOR: Flex1 Value: 1405[0m
+[0;32mI (21777) FLEX_SENSOR: Flex1 Value: 1431[0m
+[0;32mI (24087) FLEX_SENSOR: Flex1 Value: 1442[0m
+[0;32mI (28487) FLEX_SENSOR: Flex1 Value: 1467[0m
+[0;32mI (29917) FLEX_SENSOR: Flex1 Value: 1456[0m
+[0;32mI (31347) FLEX_SENSOR: Flex1 Value: 1473[0m
+[0;32mI (31677) FLEX_SENSOR: Flex1 Value: 1432[0m
+[0;32mI (31897) FLEX_SENSOR: Flex1 Value: 1406[0m
+[0;32mI (32007) FLEX_SENSOR: Flex1 Value: 1390[0m
+[0;32mI (32557) FLEX_SENSOR: Flex1 Value: 1405[0m
+[0;32mI (32667) FLEX_SENSOR: Flex1 Value: 1425[0m
+[0;32mI (33217) FLEX_SENSOR: Flex1 Value: 1436[0m
+[0;32mI (34097) FLEX_SENSOR: Flex2 Value: 1524[0m
+[0;32mI (34207) FLEX_SENSOR: Flex2 Value: 1543[0m
+[0;32mI (34317) FLEX_SENSOR: Flex2 Value: 1560[0m
+[0;32mI (34647) FLEX_SENSOR: Flex2 Value: 1576[0m
+[0;32mI (36187) FLEX_SENSOR: Flex2 Value: 1587[0m
+[0;32mI (36407) FLEX_SENSOR: Flex2 Value: 1570[0m
+[0;32mI (36517) FLEX_SENSOR: Flex2 Value: 1474[0m
+[0;32mI (37507) FLEX_SENSOR: Flex2 Value: 1485[0m
+[0;32mI (38057) FLEX_SENSOR: Flex2 Value: 1469[0m
+[0;32mI (38167) FLEX_SENSOR: Flex2 Value: 1457[0m
+[0;32mI (38277) FLEX_SENSOR: Flex2 Value: 1472[0m
+[0;32mI (38497) FLEX_SENSOR: Flex2 Value: 1483[0m
+[0;32mI (38607) FLEX_SENSOR: Flex2 Value: 1458[0m
+[0;32mI (38717) FLEX_SENSOR: Flex2 Value: 1477[0m
+[0;32mI (46197) FLEX_SENSOR: Flex3 Value: 1456[0m
+[0;32mI (46417) FLEX_SENSOR: Flex3 Value: 1439[0m
+[0;32mI (46527) FLEX_SENSOR: Flex3 Value: 1452[0m
+[0;32mI (46637) FLEX_SENSOR: Flex3 Value: 1463[0m
+[0;32mI (46857) FLEX_SENSOR: Flex3 Value: 1475[0m
+[0;32mI (48067) FLEX_SENSOR: Flex3 Value: 1461[0m
+[0;32mI (48617) FLEX_SENSOR: Flex3 Value: 1482[0m
+[0;32mI (53127) FLEX_SENSOR: Flex4 Value: 1796[0m
+[0;32mI (53347) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (53567) FLEX_SENSOR: Flex1 Value: 1447[0m
+[0;32mI (61707) FLEX_SENSOR: Flex3 Value: 1495[0m
+[0;32mI (61817) FLEX_SENSOR: Flex3 Value: 1482[0m
+[0;32mI (69847) FLEX_SENSOR: Flex1 Value: 1459[0m
+[0;32mI (69847) FLEX_SENSOR: Flex2 Value: 1495[0m
+[0;32mI (70177) FLEX_SENSOR: Flex1 Value: 1446[0m
+[0;32mI (70727) FLEX_SENSOR: Flex1 Value: 1457[0m
+[0;32mI (70727) FLEX_SENSOR: Flex3 Value: 1493[0m
+[0;32mI (72817) FLEX_SENSOR: Flex1 Value: 1471[0m
+[0;32mI (72817) FLEX_SENSOR: Flex2 Value: 1510[0m
+[0;32mI (72817) FLEX_SENSOR: Flex3 Value: 1522[0m
+[0;32mI (73037) FLEX_SENSOR: Flex1 Value: 1453[0m
+[0;32mI (73037) FLEX_SENSOR: Flex2 Value: 1487[0m
+[0;32mI (73037) FLEX_SENSOR: Flex3 Value: 1489[0m
+[0;32mI (73367) FLEX_SENSOR: Flex4 Value: 1808[0m
+[0;32mI (73917) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (79307) FLEX_SENSOR: Flex4 Value: 1806[0m
+[0;32mI (79637) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (81397) FLEX_SENSOR: Flex4 Value: 1478[0m
+[0;32mI (81507) FLEX_SENSOR: Flex4 Value: 1728[0m
+[0;32mI (81617) FLEX_SENSOR: Flex4 Value: 1807[0m
+[0;32mI (82167) FLEX_SENSOR: Flex1 Value: 1472[0m
+[0;32mI (82167) FLEX_SENSOR: Flex2 Value: 1507[0m
+[0;32mI (82167) FLEX_SENSOR: Flex3 Value: 1506[0m
+[0;32mI (82167) FLEX_SENSOR: Flex4 Value: 1825[0m
+[0;32mI (82277) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (82387) FLEX_SENSOR: Flex1 Value: 1456[0m
+[0;32mI (82387) FLEX_SENSOR: Flex2 Value: 1492[0m
+[0;32mI (82387) FLEX_SENSOR: Flex3 Value: 1491[0m
+[0;32mI (82387) FLEX_SENSOR: Flex4 Value: 1808[0m
+[0;32mI (82497) FLEX_SENSOR: Flex4 Value: 690[0m
+[0;32mI (82607) FLEX_SENSOR: Flex4 Value: 0[0m
+[0;32mI (82717) FLEX_SENSOR: Flex4 Value: 363[0m
+[0;32mI (82827) FLEX_SENSOR: Flex4 Value: 1808[0m
+[0;32mI (83157) FLEX_SENSOR: Flex1 Value: 1480[0m
+[0;32mI (83157) FLEX_SENSOR: Flex2 Value: 1519[0m
+[0;32mI (83157) FLEX_SENSOR: Flex3 Value: 1516[0m
+[0;32mI (83157) FLEX_SENSOR: Flex4 Value: 1829[0m
+[0;32mI (83267) FLEX_SENSOR: Flex2 Value: 1534[0m
+[0;32mI (83377) FLEX_SENSOR: Flex2 Value: 1520[0m
+[0;32mI (83487) FLEX_SENSOR: Flex2 Value: 1505[0m
+[0;32mI (83487) FLEX_SENSOR: Flex3 Value: 1500[0m
+[0;32mI (83487) FLEX_SENSOR: Flex4 Value: 1814[0m
+[0;32mI (83597) FLEX_SENSOR: Flex1 Value: 1460[0m
+[0;32mI (83597) FLEX_SENSOR: Flex2 Value: 1493[0m
+[0;32mI (83707) FLEX_SENSOR: Flex2 Value: 1504[0m
+[0;32mI (84037) FLEX_SENSOR: Flex2 Value: 1493[0m
+[0;32mI (85247) FLEX_SENSOR: Flex2 Value: 1504[0m
+[0;32mI (86237) FLEX_SENSOR: Flex4 Value: 1827[0m
+[0;32mI (86567) FLEX_SENSOR: Flex4 Value: 1842[0m
+[0;32mI (86677) FLEX_SENSOR: Flex4 Value: 1853[0m
+[0;32mI (87007) FLEX_SENSOR: Flex4 Value: 1865[0m
+[0;32mI (87227) FLEX_SENSOR: Flex1 Value: 1471[0m
+[0;32mI (87227) FLEX_SENSOR: Flex4 Value: 1850[0m
+[0;32mI (87447) FLEX_SENSOR: Flex4 Value: 1836[0m
+[0;32mI (87557) FLEX_SENSOR: Flex4 Value: 1817[0m
+[0;32mI (89537) FLEX_SENSOR: Flex4 Value: 1828[0m
+[0;32mI (90087) FLEX_SENSOR: Flex4 Value: 1840[0m
+[0;32mI (90417) FLEX_SENSOR: Flex4 Value: 1827[0m
+[0;32mI (90637) FLEX_SENSOR: Flex4 Value: 1841[0m
+[0;32mI (90857) FLEX_SENSOR: Flex4 Value: 1829[0m
+[0;32mI (94267) FLEX_SENSOR: Flex4 Value: 1817[0m
+[0;32mI (94377) FLEX_SENSOR: Flex1 Value: 1460[0m
+[0;32mI (100757) FLEX_SENSOR: Flex2 Value: 1493[0m
+[0;32mI (100977) FLEX_SENSOR: Flex3 Value: 1489[0m
+[0;32mI (123087) FLEX_SENSOR: Flex4 Value: 1806[0m
