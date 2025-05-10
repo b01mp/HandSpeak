@@ -4,7 +4,7 @@
 HandSpeak is an assistive technology project that converts hand gestures into audio feedback using a combination of flex sensors and motion sensing. This system enables non-verbal communication through customized hand gestures that trigger corresponding audio messages.
 
 ## Hardware Components
-- Arduino microcontroller
+- ESP32 Microcontroller
 - 5 flex sensors (one for each finger)
 - MPU6050 accelerometer/gyroscope module
 - DFPlayer Mini MP3 player module
@@ -15,20 +15,19 @@ HandSpeak is an assistive technology project that converts hand gestures into au
 ## Features
 - Real-time hand gesture recognition
 - Customizable gesture-to-audio mapping
-- Portable and wearable design
 - Low latency response time
 - Support for multiple predefined audio messages
 
 ## How It Works
 1. Flex sensors mounted on a glove detect finger bending angles
 2. The MPU6050 tracks hand orientation and movement
-3. An Arduino processes the combined sensor data to identify specific gestures
+3. An ESP32 processes the combined sensor data to identify specific gestures
 4. When a recognized gesture is detected, the DFPlayer Mini plays the corresponding audio file
 5. The system provides immediate audio feedback through the connected speaker
 
 ## Installation and Setup
 1. Connect the hardware components according to the circuit diagram
-2. Upload the provided Arduino code to your microcontroller
+2. Upload the provided ESP32 code to your microcontroller using ESP-IDF
 3. Place audio files (in MP3 format) on the microSD card for the DFPlayer Mini
 4. Mount the sensors on a glove or wearable structure
 5. Calibrate the system for your specific hand movements
@@ -48,11 +47,6 @@ HandSpeak is an assistive technology project that converts hand gestures into au
 - Add haptic feedback for user confirmation
 - Implement rechargeable battery solution
 
-### Software Improvements
-- Create companion mobile app for customization
-- Add multi-language support
-- Implement context-aware gesture recognition
-- Develop gesture recording and editing interface
 
 ## Project Demonstration
 Watch the demonstration video:
@@ -60,9 +54,3 @@ Watch the demonstration video:
 
 ## Credits
 This project was developed as a solution to enhance communication capabilities for individuals who use sign language or have speech impairments.
-
-## License
-This project is released under the MIT License.
-
-## Contact
-For questions or collaboration opportunities, please reach out through [contact information].
