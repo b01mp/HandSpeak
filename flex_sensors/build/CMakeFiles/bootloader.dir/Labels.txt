@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/CMakeFiles/bootloader
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/CMakeFiles/bootloader.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/CMakeFiles/bootloader-complete.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

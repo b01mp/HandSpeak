@@ -1,0 +1,142 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/flex_sensors/build/flex.elf /home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py'
+[0;32mI (179) boot: Loaded app from partition at o�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 14 2025 15:50:56[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0af98h ( 44952) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001afc0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (103) esp_image: segment 2: paddr=0001afe4 vaddr=3ffb0000 size=02324h (  8996) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=0001d310 vaddr=40080000 size=02d08h ( 11528) load[0m
+[0;32mI (119) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17390h ( 95120) map[0m
+[0;32mI (154) esp_image: segment 5: paddr=000373b8 vaddr=40082d08 size=0af14h ( 44820) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu start user code[0m
+[0;32mI (197) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     flex[0m
+[0;32mI (201) app_init: App version:      9b8ef92-dirty[0m
+[0;32mI (206) app_init: Compile time:     Apr 14 2025 15:50:48[0m
+[0;32mI (211) app_init: ELF file SHA256:  541e64a19...[0m
+[0;32mI (215) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (220) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (228) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (232) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (239) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFB2C10 len 0002D3F0 (180 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 4008DC1C len 000123E4 (72 KiB): IRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (269) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+[0;32mI (294) FLEX_DFPLAYER: Initializing Flex Sensors and DFPlayer...[0m
+[0;32mI (3294) FLEX_DFPLAYER: Thumb: 29, Index: 50, Middle: 47, Ring: 110, Pinky: 1273[0m
+[0;32mI (4594) FLEX_DFPLAYER: Thumb: 32, Index: 50, Middle: 48, Ring: 117, Pinky: 1271[0m
+[0;32mI (5894) FLEX_DFPLAYER: Thumb: 33, Index: 50, Middle: 48, Ring: 116, Pinky: 1276[0m
+[0;32mI (7194) FLEX_DFPLAYER: Thumb: 33, Index: 50, Middle: 48, Ring: 121, Pinky: 1275[0m
+[0;32mI (8494) FLEX_DFPLAYER: Thumb: 34, Index: 52, Middle: 50, Ring: 125, Pinky: 1301[0m
+[0;32mI (8494) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (9994) FLEX_DFPLAYER: Thumb: 34, Index: 49, Middle: 46, Ring: 114, Pinky: 1280[0m
+[0;32mI (11294) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 47, Ring: 118, Pinky: 1337[0m
+[0;32mI (12594) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 45, Ring: 114, Pinky: 1365[0m
+[0;32mI (13894) FLEX_DFPLAYER: Thumb: 33, Index: 50, Middle: 48, Ring: 118, Pinky: 1205[0m
+[0;32mI (15194) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 45, Ring: 113, Pinky: 1170[0m
+[0;32mI (16494) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 109, Pinky: 1318[0m
+[0;32mI (16494) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (17994) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 44, Ring: 102, Pinky: 988[0m
+[0;32mI (19294) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 104, Pinky: 1139[0m
+[0;32mI (20594) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 107, Pinky: 1277[0m
+[0;32mI (21894) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 107, Pinky: 1362[0m
+[0;32mI (21894) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (23394) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 43, Ring: 94, Pinky: 1235[0m
+[0;32mI (24694) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 43, Ring: 101, Pinky: 1253[0m
+[0;32mI (25994) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 105, Pinky: 1258[0m
+[0;32mI (27294) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 105, Pinky: 1258[0m
+[0;32mI (28594) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 106, Pinky: 1259[0m
+[0;32mI (29894) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 106, Pinky: 1260[0m
+[0;32mI (31194) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 45, Ring: 106, Pinky: 1260[0m
+[0;32mI (32494) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 45, Ring: 108, Pinky: 1263[0m
+[0;32mI (33794) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 45, Ring: 108, Pinky: 1262[0m
+[0;32mI (35094) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 44, Ring: 107, Pinky: 1263[0m
+[0;32mI (36394) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 44, Ring: 108, Pinky: 1264[0m
+[0;32mI (37694) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 45, Ring: 110, Pinky: 1266[0m
+[0;32mI (38994) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 45, Ring: 110, Pinky: 1267[0m
+[0;32mI (40294) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 110, Pinky: 1267[0m
+[0;32mI (41594) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 46, Ring: 111, Pinky: 1265[0m
+[0;32mI (42894) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 110, Pinky: 1265[0m
+[0;32mI (44194) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 46, Ring: 110, Pinky: 1264[0m
+[0;32mI (45494) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 45, Ring: 109, Pinky: 1266[0m
+[0;32mI (46794) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 109, Pinky: 1266[0m
+[0;32mI (48094) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 109, Pinky: 1266[0m
+[0;32mI (49394) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 110, Pinky: 1266[0m
+[0;32mI (50694) FLEX_DFPLAYER: Thumb: 33, Index: 50, Middle: 46, Ring: 109, Pinky: 1267[0m
+[0;32mI (51994) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 109, Pinky: 1267[0m
+[0;32mI (53294) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 109, Pinky: 1266[0m
+[0;32mI (54594) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 45, Ring: 110, Pinky: 1267[0m
+[0;32mI (55894) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 112, Pinky: 1267[0m
+[0;32mI (57194) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 46, Ring: 112, Pinky: 1268[0m
+[0;32mI (58494) FLEX_DFPLAYER: Thumb: 32, Index: 48, Middle: 46, Ring: 114, Pinky: 1273[0m
+[0;32mI (59794) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 45, Ring: 110, Pinky: 1270[0m
+[0;32mI (61094) FLEX_DFPLAYER: Thumb: 31, Index: 48, Middle: 45, Ring: 110, Pinky: 1278[0m
+[0;32mI (62394) FLEX_DFPLAYER: Thumb: 31, Index: 47, Middle: 45, Ring: 111, Pinky: 1270[0m
+[0;32mI (63694) FLEX_DFPLAYER: Thumb: 33, Index: 49, Middle: 45, Ring: 112, Pinky: 1271[0m
+[0;32mI (64994) FLEX_DFPLAYER: Thumb: 33, Index: 48, Middle: 45, Ring: 111, Pinky: 1265[0m
+[0;32mI (66294) FLEX_DFPLAYER: Thumb: 31, Index: 46, Middle: 45, Ring: 107, Pinky: 1196[0m
+[0;32mI (67594) FLEX_DFPLAYER: Thumb: 31, Index: 46, Middle: 45, Ring: 110, Pinky: 1300[0m
+[0;32mI (67594) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (69094) FLEX_DFPLAYER: Thumb: 31, Index: 46, Middle: 44, Ring: 108, Pinky: 1304[0m
+[0;32mI (70394) FLEX_DFPLAYER: Thumb: 31, Index: 46, Middle: 44, Ring: 108, Pinky: 1247[0m
+[0;32mI (71694) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 107, Pinky: 1263[0m
+[0;32mI (72994) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 45, Ring: 108, Pinky: 1265[0m
+[0;32mI (74294) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 109, Pinky: 1265[0m
+[0;32mI (75594) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 108, Pinky: 1267[0m
+[0;32mI (76894) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 109, Pinky: 1270[0m
+[0;32mI (78194) FLEX_DFPLAYER: Thumb: 32, Index: 49, Middle: 46, Ring: 114, Pinky: 1272[0m
+[0;32mI (79494) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 45, Ring: 107, Pinky: 1269[0m
+[0;32mI (80794) FLEX_DFPLAYER: Thumb: 31, Index: 47, Middle: 45, Ring: 106, Pinky: 1257[0m
+[0;32mI (82094) FLEX_DFPLAYER: Thumb: 31, Index: 47, Middle: 45, Ring: 109, Pinky: 1313[0m
+[0;32mI (82094) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (83594) FLEX_DFPLAYER: Thumb: 31, Index: 47, Middle: 45, Ring: 110, Pinky: 1321[0m
+[0;32mI (84894) FLEX_DFPLAYER: Thumb: 31, Index: 46, Middle: 44, Ring: 102, Pinky: 1073[0m
+[0;32mI (86194) FLEX_DFPLAYER: Thumb: 31, Index: 45, Middle: 44, Ring: 107, Pinky: 1298[0m
+[0;32mI (86194) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (87694) FLEX_DFPLAYER: Thumb: 32, Index: 47, Middle: 44, Ring: 102, Pinky: 1197[0m
+[0;32mI (88994) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 104, Pinky: 1261[0m
+[0;32mI (90294) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 105, Pinky: 1262[0m
+[0;32mI (91594) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 105, Pinky: 1265[0m
+[0;32mI (92894) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 45, Ring: 108, Pinky: 1264[0m
+[0;32mI (94194) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 106, Pinky: 1264[0m
+[0;32mI (95494) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 45, Ring: 107, Pinky: 1265[0m
+[0;32mI (96794) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 106, Pinky: 1266[0m
+[0;32mI (98094) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 45, Ring: 107, Pinky: 1267[0m
+[0;32mI (99394) FLEX_DFPLAYER: Thumb: 31, Index: 45, Middle: 44, Ring: 107, Pinky: 1267[0m
+[0;32mI (100694) FLEX_DFPLAYER: Thumb: 32, Index: 46, Middle: 44, Ring: 107, Pinky: 1266[0m
+[0;32mI (101994) FLEX_DFPLAYER: Thumb: 31, Index: 45, Middle: 43, Ring: 105, Pinky: 1264[0m
+[0;32mI (103294) FLEX_DFPLAYER: Thumb: 31, Index: 45, Middle: 44, Ring: 104, Pinky: 1264[0m
+[0;32mI (104594) FLEX_DFPLAYER: Thumb: 31, Index: 44, Middle: 43, Ring: 103, Pinky: 1265[0m
+[0;32mI (105894) FLEX_DFPLAYER: Thumb: 31, Index: 45, Middle: 43, Ring: 105, Pinky: 1267[0m

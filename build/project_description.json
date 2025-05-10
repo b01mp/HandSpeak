@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "SignSpeak",
-    "project_version":    "81ea904-dirty",
+    "project_version":    "9b8ef92-dirty",
     "project_path":       "/home/bhavesh/Talk-To-My-Hand",
     "idf_path":           "/home/bhavesh/esp/esp-idf",
     "build_dir":          "/home/bhavesh/Talk-To-My-Hand/build",

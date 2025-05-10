@@ -1,0 +1,252 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 11 2025 18:03:56[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5ach ( 50604) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001c5d4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001c5f8 vaddr=3ffb0000 size=023b4h (  9140) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001e9b4 vaddr=40080000 size=01664h (  5732) load[0m
+[0;32mI (118) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1993ch (104764) map[0m
+[0;32mI (159) esp_image: segment 5: paddr=00039964 vaddr=40081664 size=0cdfch ( 52732) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     SignSpeak[0m
+[0;32mI (214) app_init: App version:      9b8ef92-dirty[0m
+[0;32mI (219) app_init: Compile time:     Apr 11 2025 18:03:46[0m
+[0;32mI (225) app_init: ELF file SHA256:  227f6c5e69a4161a...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (238) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (243) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (253) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (260) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFB2CD0 len 0002D330 (180 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 4008E460 len 00011BA0 (70 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;33mW (299) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (312) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) GESTURE_AUDIO: I2C initialized successfully[0m
+[0;32mI (434) GESTURE_AUDIO: MPU6050 found with ID: 0x68[0m
+[0;32mI (434) GESTURE_AUDIO: MPU6050 initialized successfully[0m
+[0;32mI (434) GESTURE_AUDIO: ADC initialized for flex sensors[0m
+[0;32mI (434) GESTURE_AUDIO: DFPlayer initialized[0m
+[0;32mI (1444) GESTURE_AUDIO: Calibrating gyroscope - keep the sensor still...[0m
+[0;32mI (2444) GESTURE_AUDIO: Gyro offsets - X: 561, Y: 233, Z: -2706[0m
+[0;32mI (2444) GESTURE_AUDIO: Initialization complete! Ready for gesture detection.[0m
+[0;32mI (2494) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (2694) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (3794) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (3994) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (4844) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (5044) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (6594) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (6794) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (7644) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (7844) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (8744) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (8944) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (9794) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (9994) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (10844) GESTURE_AUDIO: Playing file 0009.mp3[0m
+[0;32mI (11044) GESTURE_AUDIO: Gesture: Thumb + Gyro Left 'Have a Great Day'[0m
+[0;32mI (12244) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (12444) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (13294) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (13494) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (15144) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (15344) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (16644) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (16844) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (17744) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (17944) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (19444) GESTURE_AUDIO: Playing file 0009.mp3[0m
+[0;32mI (19644) GESTURE_AUDIO: Gesture: Thumb + Gyro Left 'Have a Great Day'[0m
+[0;32mI (20494) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (20694) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (21544) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (21744) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (22594) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (22794) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (23644) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (23844) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (25294) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (25494) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (26394) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (26594) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (27444) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (27644) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (29044) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (29244) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (30094) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (30294) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (31144) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (31344) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (32194) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (32394) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (33244) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (33444) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (34744) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (34944) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (35794) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (35994) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (36844) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (37044) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (37894) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (38094) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (38944) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (39144) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (39994) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (40194) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (41044) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (41244) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (42094) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (42294) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (43194) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (43394) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (44244) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (44444) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (45294) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (45494) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (46344) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (46544) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (47394) GESTURE_AUDIO: Playing file 0009.mp3[0m
+[0;32mI (47594) GESTURE_AUDIO: Gesture: Thumb + Gyro Left 'Have a Great Day'[0m
+[0;32mI (48444) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (48644) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (49844) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (50044) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (51044) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (51244) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (52094) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (52294) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (53194) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (53394) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (54244) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (54444) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (55294) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (55494) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (59394) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (59594) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (60444) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (60644) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (61994) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (62194) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (63044) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (63244) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (65494) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (65694) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (70644) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (70844) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (72294) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (72494) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (73494) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (73694) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+I BOD: Brownout detector was triggered
+
+
+ets Jun  8 2016 00:22:57
+
+rst:0x3 (SW_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (52) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (53) boot: compile time Apr 11 2025 18:03:56[0m
+[0;32mI (53) boot: Multicore bootloader[0m
+[0;32mI (56) boot: chip revision: v1.0[0m
+[0;32mI (59) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (63) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (66) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (70) boot: Enabling RNG early entropy source...[0m
+[0;32mI (74) boot: Partition Table:[0m
+[0;32mI (77) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (90) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (96) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5ach ( 50604) map[0m
+[0;32mI (1470) GESTURE_AUDIO: Calibrating gyroscope - keep the sensor still...[0m
+[0;32mI (2470) GESTURE_AUDIO: Gyro offsets - X: -487, Y: 277, Z: -89[0m
+[0;32mI (2470) GESTURE_AUDIO: Initialization complete! Ready for gesture detection.[0m
+[0;32mI (3770) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (3970) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (6170) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (6370) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (7220) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (7420) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (8870) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (9070) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (10320) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (10520) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (11920) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (12120) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (12970) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (13170) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (14070) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (14270) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (15720) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (15920) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (16770) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (16970) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (19920) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (20120) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (22720) GESTURE_AUDIO: Playing file 0003.mp3[0m
+[0;32mI (22920) GESTURE_AUDIO: Gesture: Middle finger flex - Playing 'Good Night'[0m
+[0;32mI (25470) GESTURE_AUDIO: Playing file 0003.mp3[0m
+[0;32mI (25670) GESTURE_AUDIO: Gesture: Middle finger flex - Playing 'Good Night'[0m
+[0;32mI (26520) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (26720) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (27570) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (27770) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (29170) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (29370) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (30270) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (30470) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (31920) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (32120) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (33020) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (33220) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (34070) GESTURE_AUDIO: Playing file 0009.mp3[0m
+[0;32mI (34270) GESTURE_AUDIO: Gesture: Thumb + Gyro Left 'Have a Great Day'[0m
+[0;32mI (35120) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (35320) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'this is Bhavesh'[0m
+[0;32mI (36170) GESTURE_AUDIO: Playing file 0009.mp3[0m
+[0;32mI (36370) GESTURE_AUDIO: Gesture: Thumb + Gyro Left 'Have a Great Day'[0m
+[0;32mI (37270) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (37470) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (44520) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (44720) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m

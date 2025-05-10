@@ -1,0 +1,216 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+=0bdb0h ( 48560) load
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 11 2025 18:03:56[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b7ech ( 47084) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b814 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001b838 vaddr=3ffb0000 size=023b4h (  9140) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001dbf4 vaddr=40080000 size=02424h (  9252) load[0m
+[0;32mI (118) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16168h ( 90472) map[0m
+[0;32mI (153) esp_image: segment 5: paddr=00036190 vaddr=40082424 size=0bdb0h ( 48560) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     SignSpeak[0m
+[0;32mI (206) app_init: App version:      9b8ef92-dirty[0m
+[0;32mI (212) app_init: Compile time:     Apr 11 2025 18:03:46[0m
+[0;32mI (218) app_init: ELF file SHA256:  0f61af0ee638d8b8...[0m
+[0;32mI (223) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008E1D4 len 00011E2C (71 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) MPU6050: I2C initialized successfully[0m
+Scanning I2C bus...
+Device found at address 0x68
+Scan complete, found 1 device(s)
+[0;32mI (616) MPU6050: MPU6050 found with ID: 0x68[0m
+[0;32mI (616) MPU6050: MPU6050 initialized successfully[0m
+[0;32mI (616) MPU6050: Calibrating gyroscope - keep the sensor still...[0m
+[0;32mI (1616) MPU6050: Gyro offsets - X: -284, Y: 5, Z: -59[0m
+[0;32mI (1616) MPU6050: Raw - Gyro  X:    -29, Y:   -127, Z:    -82[0m
+[0;32mI (1616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (2116) MPU6050: Raw - Gyro  X:   -251, Y:   -118, Z:     28[0m
+[0;32mI (2116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (2616) MPU6050: Raw - Gyro  X:  -4695, Y:   1716, Z:  -7492[0m
+[0;32mI (2616) MPU6050: Gyro (deg/s) - X: -7.17, Y: 2.62, Z: -11.44[0m
+[0;32mI (3116) MPU6050: Raw - Gyro  X:  -1405, Y:    298, Z:  -3042[0m
+[0;32mI (3116) MPU6050: Gyro (deg/s) - X: -7.88, Y: 2.55, Z: -13.79[0m
+[0;32mI (3616) MPU6050: Raw - Gyro  X:    499, Y:   -169, Z:    581[0m
+[0;32mI (3616) MPU6050: Gyro (deg/s) - X: -5.54, Y: 1.78, Z: -10.15[0m
+[0;32mI (4116) MPU6050: Raw - Gyro  X:     84, Y:   -114, Z:    -31[0m
+[0;32mI (4116) MPU6050: Gyro (deg/s) - X: -4.31, Y: 1.25, Z: -8.17[0m
+[0;32mI (4616) MPU6050: Raw - Gyro  X:     55, Y:   -131, Z:      1[0m
+[0;32mI (4616) MPU6050: Gyro (deg/s) - X: -3.36, Y: 0.80, Z: -6.53[0m
+[0;32mI (5116) MPU6050: Raw - Gyro  X:   5700, Y:  -1580, Z:  12828[0m
+[0;32mI (5116) MPU6050: Gyro (deg/s) - X: 6.01, Y: -1.77, Z: 14.36[0m
+[0;32mI (5616) MPU6050: Raw - Gyro  X:    -47, Y:    -68, Z:    885[0m
+[0;32mI (5616) MPU6050: Gyro (deg/s) - X: 4.74, Y: -1.52, Z: 12.84[0m
+[0;32mI (6116) MPU6050: Raw - Gyro  X:    239, Y:   2017, Z:   -897[0m
+[0;32mI (6116) MPU6050: Gyro (deg/s) - X: 4.16, Y: 1.86, Z: 8.90[0m
+[0;32mI (6616) MPU6050: Raw - Gyro  X:   -897, Y:    234, Z:   -739[0m
+[0;32mI (6616) MPU6050: Gyro (deg/s) - X: 1.96, Y: 1.85, Z: 5.99[0m
+[0;32mI (7116) MPU6050: Raw - Gyro  X:  -1054, Y:   5652, Z:  -4207[0m
+[0;32mI (7116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 10.11, Z: -1.63[0m
+[0;32mI (7616) MPU6050: Raw - Gyro  X:    150, Y:    240, Z:   -196[0m
+[0;32mI (7616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 8.45, Z: -1.60[0m
+[0;32mI (8116) MPU6050: Raw - Gyro  X:   -200, Y:    136, Z:    730[0m
+[0;32mI (8116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 6.97, Z: 0.00[0m
+[0;32mI (8616) MPU6050: Raw - Gyro  X:   -136, Y:    517, Z:   4256[0m
+[0;32mI (8616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 6.36, Z: 6.50[0m
+[0;32mI (9116) MPU6050: Raw - Gyro  X:   6474, Y:  -2023, Z:  11943[0m
+[0;32mI (9116) MPU6050: Gyro (deg/s) - X: 9.88, Y: 2.00, Z: 23.43[0m
+[0;32mI (9616) MPU6050: Raw - Gyro  X:   5234, Y:  -2729, Z:  16548[0m
+[0;32mI (9616) MPU6050: Gyro (deg/s) - X: 15.90, Y: -2.56, Z: 44.01[0m
+[0;32mI (9616) MPU6050: HELLO[0m
+[0;32mI (10116) MPU6050: Raw - Gyro  X:   1756, Y:  -1823, Z:  10454[0m
+[0;32mI (10116) MPU6050: Gyro (deg/s) - X: 15.40, Y: -4.83, Z: 51.17[0m
+[0;32mI (10116) MPU6050: HELLO[0m
+[0;32mI (10616) MPU6050: Raw - Gyro  X:   2666, Y:   8723, Z: -20715[0m
+[0;32mI (10616) MPU6050: Gyro (deg/s) - X: 16.39, Y: 9.45, Z: 9.31[0m
+[0;32mI (11116) MPU6050: Raw - Gyro  X:   -724, Y:  -1197, Z:  -3316[0m
+[0;32mI (11116) MPU6050: Gyro (deg/s) - X: 12.01, Y: 5.73, Z: 2.38[0m
+[0;32mI (11616) MPU6050: Raw - Gyro  X:   6327, Y:   5422, Z: -11484[0m
+[0;32mI (11616) MPU6050: Gyro (deg/s) - X: 19.26, Y: 12.86, Z: -15.63[0m
+[0;32mI (12116) MPU6050: Raw - Gyro  X:   3888, Y:   1630, Z:  -9558[0m
+[0;32mI (12116) MPU6050: Gyro (deg/s) - X: 21.35, Y: 12.78, Z: -27.09[0m
+[0;32mI (12116) MPU6050: GOD B;ESS U[0m
+[0;32mI (12616) MPU6050: Raw - Gyro  X:   3388, Y:   -200, Z:   7873[0m
+[0;32mI (12616) MPU6050: Gyro (deg/s) - X: 22.25, Y: 9.92, Z: -9.65[0m
+[0;32mI (12616) MPU6050: GOD B;ESS U[0m
+[0;32mI (13116) MPU6050: Raw - Gyro  X:   6113, Y:  -3920, Z:  15994[0m
+[0;32mI (13116) MPU6050: Gyro (deg/s) - X: 27.13, Y: 1.95, Z: 16.69[0m
+[0;32mI (13116) MPU6050: GOD B;ESS U[0m
+[0;32mI (13616) MPU6050: Raw - Gyro  X:  -2219, Y:   2234, Z:  22930[0m
+[0;32mI (13616) MPU6050: Gyro (deg/s) - X: 18.32, Y: 4.97, Z: 48.36[0m
+[0;32mI (13616) MPU6050: HELLO[0m
+[0;32mI (14116) MPU6050: Raw - Gyro  X:    -30, Y:    106, Z:   -125[0m
+[0;32mI (14116) MPU6050: Gyro (deg/s) - X: 14.61, Y: 4.14, Z: 38.50[0m
+[0;32mI (14116) MPU6050: HELLO[0m
+[0;32mI (14616) MPU6050: Raw - Gyro  X:  -1899, Y:  -3628, Z:   8243[0m
+[0;32mI (14616) MPU6050: Gyro (deg/s) - X: 8.79, Y: -2.23, Z: 43.38[0m
+[0;32mI (14616) MPU6050: HELLO[0m
+[0;32mI (15116) MPU6050: Raw - Gyro  X:  -4016, Y:  10768, Z: -17379[0m
+[0;32mI (15116) MPU6050: Gyro (deg/s) - X: 0.90, Y: 14.66, Z: 8.17[0m
+[0;32mI (15616) MPU6050: Raw - Gyro  X:     40, Y:   -579, Z:    932[0m
+[0;32mI (15616) MPU6050: Gyro (deg/s) - X: 0.78, Y: 10.84, Z: 7.96[0m
+[0;32mI (16116) MPU6050: Raw - Gyro  X:  -5287, Y:  12064, Z: -12462[0m
+[0;32mI (16116) MPU6050: Gyro (deg/s) - X: -7.45, Y: 27.09, Z: -12.66[0m
+[0;32mI (16116) MPU6050: HOOOOOOO[0m
+[0;32mI (16616) MPU6050: Raw - Gyro  X:     34, Y:   -247, Z:    236[0m
+[0;32mI (16616) MPU6050: Gyro (deg/s) - X: -5.91, Y: 21.30, Z: -9.76[0m
+[0;32mI (16616) MPU6050: HOOOOOOO[0m
+[0;32mI (17116) MPU6050: Raw - Gyro  X:   2376, Y:  -2304, Z:   7667[0m
+[0;32mI (17116) MPU6050: Gyro (deg/s) - X: -1.10, Y: 13.52, Z: 3.89[0m
+[0;32mI (17616) MPU6050: Raw - Gyro  X:   3315, Y:  -2764, Z:  11535[0m
+[0;32mI (17616) MPU6050: Gyro (deg/s) - X: 4.18, Y: 6.60, Z: 20.73[0m
+[0;32mI (18116) MPU6050: Raw - Gyro  X:   4086, Y:  -1507, Z:  11447[0m
+[0;32mI (18116) MPU6050: Gyro (deg/s) - X: 9.58, Y: 2.98, Z: 34.06[0m
+[0;32mI (18116) MPU6050: HELLO[0m
+[0;32mI (18616) MPU6050: Raw - Gyro  X:   1244, Y:  -1282, Z:   2411[0m
+[0;32mI (18616) MPU6050: Gyro (deg/s) - X: 9.57, Y: 0.00, Z: 30.93[0m
+[0;32mI (18616) MPU6050: HELLO[0m
+[0;32mI (19116) MPU6050: Raw - Gyro  X:   1421, Y:  -2021, Z:   7840[0m
+[0;32mI (19116) MPU6050: Gyro (deg/s) - X: 9.82, Y: -3.09, Z: 36.71[0m
+[0;32mI (19116) MPU6050: HELLO[0m
+[0;32mI (19616) MPU6050: Raw - Gyro  X:   2177, Y:   -884, Z:   1318[0m
+[0;32mI (19616) MPU6050: Gyro (deg/s) - X: 11.18, Y: -3.82, Z: 31.38[0m
+[0;32mI (19616) MPU6050: HELLO[0m
+[0;32mI (20116) MPU6050: Raw - Gyro  X:   -305, Y:   -384, Z:    405[0m
+[0;32mI (20116) MPU6050: Gyro (deg/s) - X: 8.48, Y: -3.64, Z: 25.72[0m
+[0;32mI (20116) MPU6050: HELLO[0m
+[0;32mI (20616) MPU6050: Raw - Gyro  X:     71, Y:   -270, Z:     60[0m
+[0;32mI (20616) MPU6050: Gyro (deg/s) - X: 6.89, Y: -3.32, Z: 20.67[0m
+[0;32mI (21116) MPU6050: Raw - Gyro  X:   -229, Y:    -73, Z:   -211[0m
+[0;32mI (21116) MPU6050: Gyro (deg/s) - X: 5.16, Y: -2.77, Z: 16.21[0m
+[0;32mI (21616) MPU6050: Raw - Gyro  X:    183, Y:   -412, Z:    262[0m
+[0;32mI (21616) MPU6050: Gyro (deg/s) - X: 4.41, Y: -2.85, Z: 13.37[0m
+[0;32mI (22116) MPU6050: Raw - Gyro  X: -18943, Y:  -1699, Z: -23460[0m
+[0;32mI (22116) MPU6050: Gyro (deg/s) - X: -25.39, Y: -4.87, Z: -25.12[0m
+[0;32mI (22616) MPU6050: Raw - Gyro  X:    388, Y:   -172, Z:    661[0m
+[0;32mI (22616) MPU6050: Gyro (deg/s) - X: -19.72, Y: -4.16, Z: -19.09[0m
+[0;32mI (23116) MPU6050: Raw - Gyro  X:   1473, Y:   8861, Z: -18621[0m
+[0;32mI (23116) MPU6050: Gyro (deg/s) - X: -13.53, Y: 10.20, Z: -43.70[0m
+[0;32mI (23616) MPU6050: Raw - Gyro  X:  -3869, Y:     -1, Z:    373[0m
+[0;32mI (23616) MPU6050: Gyro (deg/s) - X: -16.73, Y: 8.16, Z: -34.39[0m
+[0;32mI (24116) MPU6050: Raw - Gyro  X:    741, Y:  -1763, Z:   6571[0m
+[0;32mI (24116) MPU6050: Gyro (deg/s) - X: -12.25, Y: 3.84, Z: -17.48[0m
+[0;32mI (24616) MPU6050: Raw - Gyro  X: -11729, Y:    -17, Z: -13949[0m
+[0;32mI (24616) MPU6050: Gyro (deg/s) - X: -27.71, Y: 3.04, Z: -35.28[0m
+[0;32mI (25116) MPU6050: Raw - Gyro  X:   9835, Y:  11687, Z: -27457[0m
+[0;32mI (25116) MPU6050: Gyro (deg/s) - X: -7.15, Y: 20.28, Z: -70.14[0m
+[0;32mI (25116) MPU6050: HOOOOOOO[0m
+[0;32mI (25616) MPU6050: Raw - Gyro  X:  -2552, Y:  -6451, Z:  14662[0m
+[0;32mI (25616) MPU6050: Gyro (deg/s) - X: -9.62, Y: 6.37, Z: -33.73[0m
+[0;32mI (26116) MPU6050: Raw - Gyro  X:   1679, Y:  -3971, Z:  11691[0m
+[0;32mI (26116) MPU6050: Gyro (deg/s) - X: -5.13, Y: -0.96, Z: -9.13[0m
+[0;32mI (26616) MPU6050: Raw - Gyro  X:   -460, Y:   4072, Z: -10689[0m
+[0;32mI (26616) MPU6050: Gyro (deg/s) - X: -4.81, Y: 5.45, Z: -23.63[0m
+[0;32mI (27116) MPU6050: Raw - Gyro  X:   -489, Y:   1739, Z:    475[0m
+[0;32mI (27116) MPU6050: Gyro (deg/s) - X: -4.59, Y: 7.01, Z: -18.18[0m
+[0;32mI (27616) MPU6050: Raw - Gyro  X:    853, Y: -19975, Z:   4573[0m
+[0;32mI (27616) MPU6050: Gyro (deg/s) - X: -2.37, Y: -24.89, Z: -7.56[0m
+[0;32mI (28116) MPU6050: Raw - Gyro  X:   3263, Y: -15784, Z:   2144[0m
+[0;32mI (28116) MPU6050: Gyro (deg/s) - X: 3.08, Y: -44.01, Z: -2.77[0m
+[0;32mI (28616) MPU6050: Raw - Gyro  X:   6937, Y:  -3366, Z:  -5563[0m
+[0;32mI (28616) MPU6050: Gyro (deg/s) - X: 13.06, Y: -40.34, Z: -10.71[0m
+[0;32mI (29116) MPU6050: Raw - Gyro  X:  -2251, Y:   3453, Z:  -8159[0m
+[0;32mI (29116) MPU6050: Gyro (deg/s) - X: 7.01, Y: -27.00, Z: -21.03[0m
+[0;32mI (29616) MPU6050: Raw - Gyro  X:   -768, Y:    230, Z: -10717[0m
+[0;32mI (29616) MPU6050: Gyro (deg/s) - X: 4.44, Y: -21.25, Z: -33.18[0m
+[0;32mI (30116) MPU6050: Raw - Gyro  X:  -2803, Y:   1117, Z:  -1875[0m
+[0;32mI (30116) MPU6050: Gyro (deg/s) - X: -0.73, Y: -15.30, Z: -29.41[0m
+[0;32mI (30616) MPU6050: Raw - Gyro  X:   9527, Y:     91, Z:  -3532[0m
+[0;32mI (30616) MPU6050: Gyro (deg/s) - X: 13.96, Y: -12.10, Z: -28.92[0m
+[0;32mI (31116) MPU6050: Raw - Gyro  X:  17714, Y:  -5384, Z:  20763[0m
+[0;32mI (31116) MPU6050: Gyro (deg/s) - X: 38.21, Y: -17.90, Z: 8.56[0m
+[0;32mI (31116) MPU6050: GOD B;ESS U[0m
+[0;32mI (31616) MPU6050: Raw - Gyro  X:  -1160, Y:   1608, Z:  -5144[0m
+[0;32mI (31616) MPU6050: Gyro (deg/s) - X: 28.80, Y: -11.86, Z: -1.00[0m
+[0;32mI (31616) MPU6050: GOD B;ESS U[0m
+[0;32mI (32116) MPU6050: Raw - Gyro  X:  -4506, Y:  -3452, Z: -16001[0m
+[0;32mI (32116) MPU6050: Gyro (deg/s) - X: 16.16, Y: -14.76, Z: -25.23[0m
+[0;32mI (32616) MPU6050: Raw - Gyro  X:  -1124, Y:  -5624, Z: -12312[0m
+[0;32mI (32616) MPU6050: Gyro (deg/s) - X: 11.21, Y: -20.40, Z: -38.98[0m
+[0;32mI (33116) MPU6050: Raw - Gyro  X:   1561, Y:   -562, Z:   6356[0m
+[0;32mI (33116) MPU6050: Gyro (deg/s) - X: 11.35, Y: -17.17, Z: -21.48[0m
+[0;32mI (33616) MPU6050: Raw - Gyro  X:   -801, Y:   -673, Z:    470[0m
+[0;32mI (33616) MPU6050: Gyro (deg/s) - X: 7.86, Y: -14.77, Z: -16.47[0m
+[0;32mI (34116) MPU6050: Raw - Gyro  X:    278, Y:     -3, Z:    -80[0m
+[0;32mI (34116) MPU6050: Gyro (deg/s) - X: 6.71, Y: -11.82, Z: -13.30[0m

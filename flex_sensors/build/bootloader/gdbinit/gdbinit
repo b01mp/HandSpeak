@@ -1,0 +1,2 @@
+source /home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader/gdbinit/symbols
+source /home/bhavesh/Talk-To-My-Hand/flex_sensors/build/bootloader/gdbinit/connect

@@ -1,0 +1,190 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py'
+[0;32mI (159) esp_image: segment 5: paddr=00039964 vaddr=40081664 size=0cdfch ( 52732�ets Jun  8 2016 00:22:57[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 11 2025 18:03:56[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0c5ach ( 50604) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001c5d4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001c5f8 vaddr=3ffb0000 size=023b4h (  9140) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001e9b4 vaddr=40080000 size=01664h (  5732) load[0m
+[0;32mI (118) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1993ch (104764) map[0m
+[0;32mI (159) esp_image: segment 5: paddr=00039964 vaddr=40081664 size=0cdfch ( 52732) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     SignSpeak[0m
+[0;32mI (214) app_init: App version:      9b8ef92-dirty[0m
+[0;32mI (219) app_init: Compile time:     Apr 11 2025 18:03:46[0m
+[0;32mI (225) app_init: ELF file SHA256:  a773dd30b4619f58...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (238) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (243) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (253) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (260) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFB2CD0 len 0002D330 (180 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (285) heap_init: At 4008E460 len 00011BA0 (70 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;33mW (299) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (312) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (334) GESTURE_AUDIO: I2C initialized successfully[0m
+[0;32mI (434) GESTURE_AUDIO: MPU6050 found with ID: 0x68[0m
+[0;32mI (434) GESTURE_AUDIO: MPU6050 initialized successfully[0m
+[0;32mI (434) GESTURE_AUDIO: ADC initialized for flex sensors[0m
+[0;32mI (434) GESTURE_AUDIO: DFPlayer initialized[0m
+[0;32mI (1444) GESTURE_AUDIO: Calibrating gyroscope - keep the sensor still...[0m
+[0;32mI (2444) GESTURE_AUDIO: Gyro offsets - X: -557, Y: 845, Z: -4194[0m
+[0;32mI (2444) GESTURE_AUDIO: Initialization complete! Ready for gesture detection.[0m
+[0;32mI (2494) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (2694) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (3644) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (3844) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (4794) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (4994) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (5844) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (6044) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (12994) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (13194) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (71744) GESTURE_AUDIO: Playing file 0002.mp3[0m
+[0;32mI (71944) GESTURE_AUDIO: Gesture: Thumb flex - Playing 'Bye Bye'[0m
+[0;32mI (72794) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (72994) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (75894) GESTURE_AUDIO: Playing file 0006.mp3[0m
+[0;32mI (76094) GESTURE_AUDIO: Gesture: Thumb + Index Flex - Playing 'This is Yash'[0m
+[0;32mI (76944) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (77144) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (81494) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (81694) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (84644) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (84844) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (85694) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (85894) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (95894) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (96094) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (96944) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (97144) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (98094) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (98294) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (99194) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (99394) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (100244) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (100444) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (103644) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (103844) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (104694) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (104894) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (109794) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (109994) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;31mE (110194) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;32mI (110894) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (111094) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (112594) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (112794) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (113644) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (113844) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (114744) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (114944) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (115794) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (115994) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (130144) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (130344) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (131194) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (131394) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (132244) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (132444) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (133294) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (133494) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (134344) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (134544) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (135594) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (135794) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;31mE (136094) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;32mI (141394) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (141594) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (142444) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (142644) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (152444) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (152644) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (153494) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (153694) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (169744) GESTURE_AUDIO: Playing file 0005.mp3[0m
+[0;32mI (169944) GESTURE_AUDIO: Gesture: Wrist turn left - Playing 'Hello'[0m
+[0;32mI (170794) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (170994) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;31mE (171044) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171094) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171144) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171194) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171244) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171294) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171344) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171394) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171444) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171494) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171544) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171594) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171644) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171694) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171744) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (171794) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (173794) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (173844) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (173894) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (173944) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (173994) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (174044) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (174094) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (174144) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (174194) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;31mE (174244) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;32mI (259544) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (259744) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (283444) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (283644) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (292844) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (293044) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (293894) GESTURE_AUDIO: Playing file 0001.mp3[0m
+[0;32mI (294094) GESTURE_AUDIO: Gesture: Index finger flex - Playing 'Good Morning'[0m
+[0;32mI (294944) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (295144) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (305494) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (305694) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (306544) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (306744) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;32mI (312894) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (313094) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (313944) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (314144) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m
+[0;31mE (321144) GESTURE_AUDIO: Reading gyro data failed: ESP_FAIL[0m
+[0;32mI (326694) GESTURE_AUDIO: Playing file 0008.mp3[0m
+[0;32mI (326894) GESTURE_AUDIO: Gesture: Thumb + Gyro Right - Playing 'Have a Great Day'[0m
+[0;32mI (327744) GESTURE_AUDIO: Playing file 0004.mp3[0m
+[0;32mI (327944) GESTURE_AUDIO: Gesture: Wrist turn right - Playing 'Thank You'[0m

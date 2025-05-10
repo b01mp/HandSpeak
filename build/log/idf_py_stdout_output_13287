@@ -1,0 +1,96 @@
+Command: /home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/bhavesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/bhavesh/Talk-To-My-Hand/build/SignSpeak.elf /home/bhavesh/Talk-To-My-Hand/build/bootloader/bootloader.elf -m '/home/bhavesh/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/bhavesh/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+��00036190 vaddr=40082424 size=0bdb0h ( 48560) load
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6368
+load:0x40078000,len:15880
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 11 2025 18:03:56[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b7ech ( 47084) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b814 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001b838 vaddr=3ffb0000 size=023b4h (  9140) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001dbf4 vaddr=40080000 size=02424h (  9252) load[0m
+[0;32mI (118) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=16168h ( 90472) map[0m
+[0;32mI (153) esp_image: segment 5: paddr=00036190 vaddr=40082424 size=0bdb0h ( 48560) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     SignSpeak[0m
+[0;32mI (206) app_init: App version:      9b8ef92-dirty[0m
+[0;32mI (212) app_init: Compile time:     Apr 11 2025 18:03:46[0m
+[0;32mI (218) app_init: ELF file SHA256:  0f61af0ee638d8b8...[0m
+[0;32mI (223) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (230) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (252) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (258) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008E1D4 len 00011E2C (71 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (305) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) MPU6050: I2C initialized successfully[0m
+Scanning I2C bus...
+Device found at address 0x68
+Scan complete, found 1 device(s)
+[0;32mI (616) MPU6050: MPU6050 found with ID: 0x68[0m
+[0;32mI (616) MPU6050: MPU6050 initialized successfully[0m
+[0;32mI (616) MPU6050: Calibrating gyroscope - keep the sensor still...[0m
+[0;32mI (1616) MPU6050: Gyro offsets - X: -251, Y: 38, Z: -61[0m
+[0;32mI (1616) MPU6050: Raw - Gyro  X:    -14, Y:   -117, Z:   -117[0m
+[0;32mI (1616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (2116) MPU6050: Raw - Gyro  X:     -8, Y:   -116, Z:   -115[0m
+[0;32mI (2116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (2616) MPU6050: Raw - Gyro  X:     -7, Y:   -118, Z:   -112[0m
+[0;32mI (2616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (3116) MPU6050: Raw - Gyro  X:    -16, Y:   -117, Z:   -119[0m
+[0;32mI (3116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (3616) MPU6050: Raw - Gyro  X:     -7, Y:   -120, Z:   -114[0m
+[0;32mI (3616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (4116) MPU6050: Raw - Gyro  X:     -6, Y:   -123, Z:   -122[0m
+[0;32mI (4116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (4616) MPU6050: Raw - Gyro  X:    -18, Y:   -120, Z:   -122[0m
+[0;32mI (4616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (5116) MPU6050: Raw - Gyro  X:    -10, Y:   -111, Z:   -115[0m
+[0;32mI (5116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (5616) MPU6050: Raw - Gyro  X:     -5, Y:   -111, Z:   -115[0m
+[0;32mI (5616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (6116) MPU6050: Raw - Gyro  X:     -8, Y:   -120, Z:   -115[0m
+[0;32mI (6116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (6616) MPU6050: Raw - Gyro  X:    -16, Y:   -119, Z:   -117[0m
+[0;32mI (6616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (7116) MPU6050: Raw - Gyro  X:    -11, Y:   -122, Z:   -116[0m
+[0;32mI (7116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (7616) MPU6050: Raw - Gyro  X:    -14, Y:   -111, Z:   -116[0m
+[0;32mI (7616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (8116) MPU6050: Raw - Gyro  X:    -10, Y:   -126, Z:   -116[0m
+[0;32mI (8116) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
+[0;32mI (8616) MPU6050: Raw - Gyro  X:    -15, Y:   -120, Z:   -115[0m
+[0;32mI (8616) MPU6050: Gyro (deg/s) - X: 0.00, Y: 0.00, Z: 0.00[0m
