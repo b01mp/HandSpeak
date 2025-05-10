@@ -56,7 +56,7 @@ HandSpeak is an assistive technology project that converts hand gestures into au
 
 ## Project Demonstration
 Watch the demonstration video:
-[YouTube Link](#) <https://youtube.com/shorts/xSCXOc_uqc0?feature=share>
+[YouTube Link](<https://youtube.com/shorts/xSCXOc_uqc0?feature=share>) 
 
 ## Credits
 This project was developed as a solution to enhance communication capabilities for individuals who use sign language or have speech impairments.
